@@ -11,26 +11,82 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/g create
+~Msle0~/'
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1588682890,,"q"
+|2,0,1588695355,,"q"
+:source .vimrc
+|2,0,1588695281,,"source .vimrc"
+:w
+|2,0,1588695278,,"w"
+:source .vimr
+|2,0,1588694726,,"source .vimr"
+:w :source .vimrc
+|2,0,1588694718,,"w :source .vimrc"
+:YcmRestartServer
+|2,0,1588694672,,"YcmRestartServer"
+:PluginUpdate
+|2,0,1588694467,,"PluginUpdate"
 :q!
-|2,0,1588682854,,"q!"
+|2,0,1588695052,,"q!"
+:PluginInstall
+|2,0,1588694447,,"PluginInstall"
+:BundleInstall
+|2,0,1588694107,,"BundleInstall"
+:BundleClean
+|2,0,1588694067,,"BundleClean"
+:BundleUpdate
+|2,0,1588694048,,"BundleUpdate"
+:YcmDebugInfo
+|2,0,1588693405,,"YcmDebugInfo"
+:PluginClean
+|2,0,1588693243,,"PluginClean"
+:wq
+|2,0,1588693213,,"wq"
+:Q!
+|2,0,1588692783,,"Q!"
+:PlugiInstall
+|2,0,1588692676,,"PlugiInstall"
+:YcmToggleLogs stderr
+|2,0,1588691959,,"YcmToggleLogs stderr"
+:YmRestartServer
+|2,0,1588691931,,"YmRestartServer"
+:YmcRestartServer
+|2,0,1588691919,,"YmcRestartServer"
+:::
+|2,0,1588691480,,"::"
+:YcmRestartSever
+|2,0,1588691470,,"YcmRestartSever"
+:PluginUpdate YouCompleteMe
+|2,0,1588691458,,"PluginUpdate YouCompleteMe"
+:PlugUpdate YouCompleteMe
+|2,0,1588691451,,"PlugUpdate YouCompleteMe"
+:wq!
+|2,0,1588691276,,"wq!"
+:source .vrimc
+|2,0,1588689723,,"source .vrimc"
+:source .
+|2,0,1588689158,,"source ."
+:colors zenburn
+|2,0,1588688904,,"colors zenburn"
+:colors solarized
+|2,0,1588688897,,"colors solarized"
+:colors solaris
+|2,0,1588688809,,"colors solaris"
+:source. vimrc
+|2,0,1588682188,,"source. vimrc"
+:source .bimrc
+|2,0,1588682080,,"source .bimrc"
 :so %
 |2,0,1588682022,,"so %"
 :r
 |2,0,1588681998,,"r"
 :Q
 |2,0,1588678518,,"Q"
-:source .vimrc
-|2,0,1588678416,,"source .vimrc"
-:w
-|2,0,1588678414,,"w"
 :Ex projects/playground/python/push_game/pus:Q`
 |2,0,1588678337,,"Ex projects/playground/python/push_game/pus:Q`"
 :vs .vimrc
@@ -39,12 +95,6 @@ $
 |2,0,1588678166,,"Ex .vimr"
 :e .vimrc
 |2,0,1588678161,,"e .vimrc"
-:wq
-|2,0,1588677421,,"wq"
-:PluginInstall
-|2,0,1588677339,,"PluginInstall"
-:YcmRestartServer
-|2,0,1588677004,,"YcmRestartServer"
 :za
 |2,0,1588676270,,"za"
 :source ~/.vimrc
@@ -67,46 +117,16 @@ $
 |2,0,1588675275,,"b! 2"
 :b! 1
 |2,0,1588675271,,"b! 1"
-:b 1!
-|2,0,1588675266,,"b 1!"
-:b 2
-|2,0,1588675256,,"b 2"
-:ls
-|2,0,1588675251,,"ls"
-:vs Downloads/get_fxt
-|2,0,1588675193,,"vs Downloads/get_fxt"
-:sp
-|2,0,1588675154,,"sp"
-:vs
-|2,0,1588675133,,"vs"
-:hs
-|2,0,1588675125,,"hs"
-:PluginSearch
-|2,0,1588674455,,"PluginSearch"
-:GoRun!
-|2,0,1588259241,,"GoRun!"
-:GoRun
-|2,0,1588259238,,"GoRun"
-:wq!
-|2,0,1588259228,,"wq!"
-:GoFmt
-|2,0,1588259161,,"GoFmt"
-:run
-|2,0,1588259127,,"run"
-:GoInstallBinaries
-|2,0,1588259009,,"GoInstallBinaries"
-:GoINstallBinaries
-|2,0,1588258999,,"GoINstallBinaries"
-:WQ
-|2,0,1588067346,,"WQ"
-:s
-|2,0,1588064093,,"s"
-:set nu
-|2,0,1587652071,,"set nu"
-:qw
-|2,0,1587464435,,"qw"
 
 # Search String History (newest to oldest):
+? '
+|2,1,1588694074,,"'"
+??nu
+|2,1,1588690694,63,"nu"
+??color
+|2,1,1588686787,63,"color"
+??256
+|2,1,1588687022,63,"256"
 ?/g create
 |2,1,1588681222,47,"g create"
 ? @$
@@ -121,6 +141,8 @@ $
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
+@y
+|2,3,1588694069,,"y"
 
 # Debug Line History (newest to oldest):
 
@@ -129,261 +151,442 @@ $
 	
 |3,0,0,1,1,0,1588678166,""
 ""1	LINE	0
-	    print("schniedel")
-|3,1,1,1,1,0,1588678513,"    print(\"schniedel\")"
+	autocmd StdinReadPre * let s:std_in=1
+|3,1,1,1,1,0,1588695277,"autocmd StdinReadPre * let s:std_in=1"
 "2	LINE	0
-	    print_game(game)d
-|3,0,2,1,1,0,1588678512,"    print_game(game)d"
-"3	LINE	0
 	
-|3,0,3,1,1,0,1588678313,""
+|3,0,2,1,1,0,1588694908,""
+"3	LINE	0
+	autocmd StdinReadPre * let s:std_in=1
+|3,0,3,1,1,0,1588694905,"autocmd StdinReadPre * let s:std_in=1"
 "4	LINE	0
-	au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
-|3,0,4,1,1,0,1588678310,"au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\\s\\+$/"
+	autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+|3,0,4,1,1,0,1588694903,"autocmd VimEnter * if argc() == 0 && !exists(\"s:std_in\") | NERDTree | endif"
 "5	LINE	0
 	
-|3,0,5,1,1,0,1588676909,""
+|3,0,5,1,1,0,1588693211,""
 "6	LINE	0
-	" ...
-|3,0,6,1,1,0,1588676908,"\" ..."
+	tmux
+|3,0,6,1,1,0,1588693211,"tmux"
 "7	LINE	0
-	
-|3,0,7,1,1,0,1588676908,""
+	deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
+|3,0,7,1,1,0,1588691271,"deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
 "8	LINE	0
-	" used Bundle instead of Plugin)
-|3,0,8,1,1,0,1588676907,"\" used Bundle instead of Plugin)"
+	
+|3,0,8,1,1,0,1588689235,""
 "9	LINE	0
-	ck
-|3,0,9,1,1,0,1588676907,"ck"
+	call togglebg#map("<F5>")
+|3,0,9,1,1,0,1588689231,"call togglebg#map(\"<F5>\")"
 "-	CHAR	0
-	:
-|3,0,36,0,1,0,1588678478,":"
+	m
+|3,0,36,0,1,0,1588694867,"m"
 
 # File marks:
-'0  7  0  ~/projects/playground/go/test.go
-|4,48,7,0,1588682890,"~/projects/playground/go/test.go"
-'1  49  4  ~/projects/playground/python/push_game/push_game.py
-|4,49,49,4,1588682854,"~/projects/playground/python/push_game/push_game.py"
+'0  63  0  ~/.vimrc
+|4,48,63,0,1588695355,"~/.vimrc"
+'1  1  0  ~/projects/playground/python/push_game/push_game.py
+|4,49,1,0,1588694927,"~/projects/playground/python/push_game/push_game.py"
 '2  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,50,1,0,1588682201,"~/projects/playground/python/push_game/push_game.py"
-'3  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,51,1,0,1588682201,"~/projects/playground/python/push_game/push_game.py"
-'4  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,52,1,0,1588682131,"~/projects/playground/python/push_game/push_game.py"
-'5  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,53,1,0,1588682131,"~/projects/playground/python/push_game/push_game.py"
-'6  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,54,1,0,1588682088,"~/projects/playground/python/push_game/push_game.py"
-'7  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,55,1,0,1588682088,"~/projects/playground/python/push_game/push_game.py"
-'8  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,56,1,0,1588682088,"~/projects/playground/python/push_game/push_game.py"
-'9  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,57,1,0,1588682088,"~/projects/playground/python/push_game/push_game.py"
+|4,50,1,0,1588694874,"~/projects/playground/python/push_game/push_game.py"
+'3  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,51,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
+'4  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,52,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
+'5  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,53,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
+'6  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,54,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
+'7  30  0  ~/.vimrc
+|4,55,30,0,1588694460,"~/.vimrc"
+'8  27  0  ~/.vimrc
+|4,56,27,0,1588694460,"~/.vimrc"
+'9  43  0  ~/.vimrc
+|4,57,43,0,1588694080,"~/.vimrc"
 
 # Jumplist (newest first):
--'  7  0  ~/projects/playground/go/test.go
-|4,39,7,0,1588682890,"~/projects/playground/go/test.go"
--'  6  0  ~/projects/playground/go/test.go
-|4,39,6,0,1588682887,"~/projects/playground/go/test.go"
--'  1  0  ~/projects/playground/go/test.go
-|4,39,1,0,1588682867,"~/projects/playground/go/test.go"
--'  49  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,49,4,1588682854,"~/projects/playground/python/push_game/push_game.py"
--'  49  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,49,4,1588682854,"~/projects/playground/python/push_game/push_game.py"
--'  32  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,32,0,1588682851,"~/projects/playground/python/push_game/push_game.py"
--'  32  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,32,0,1588682851,"~/projects/playground/python/push_game/push_game.py"
+-'  63  0  ~/.vimrc
+|4,39,63,0,1588695355,"~/.vimrc"
+-'  39  0  ~/.vimrc
+|4,39,39,0,1588695003,"~/.vimrc"
 -'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588682202,"~/projects/playground/python/push_game/push_game.py"
+|4,39,1,0,1588694927,"~/projects/playground/python/push_game/push_game.py"
 -'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588682202,"~/projects/playground/python/push_game/push_game.py"
+|4,39,1,0,1588694927,"~/projects/playground/python/push_game/push_game.py"
 -'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588682201,"~/projects/playground/python/push_game/push_game.py"
+|4,39,1,0,1588694927,"~/projects/playground/python/push_game/push_game.py"
 -'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588682201,"~/projects/playground/python/push_game/push_game.py"
+|4,39,1,0,1588694927,"~/projects/playground/python/push_game/push_game.py"
+-'  72  0  ~/.vimrc
+|4,39,72,0,1588694911,"~/.vimrc"
 -'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588682131,"~/projects/playground/python/push_game/push_game.py"
+|4,39,1,0,1588694874,"~/projects/playground/python/push_game/push_game.py"
 -'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588682131,"~/projects/playground/python/push_game/push_game.py"
+|4,39,1,0,1588694874,"~/projects/playground/python/push_game/push_game.py"
 -'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588682088,"~/projects/playground/python/push_game/push_game.py"
+|4,39,1,0,1588694874,"~/projects/playground/python/push_game/push_game.py"
 -'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588682088,"~/projects/playground/python/push_game/push_game.py"
--'  1  7  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,7,1588682062,"~/projects/playground/python/push_game/push_game.py"
--'  1  7  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,7,1588682062,"~/projects/playground/python/push_game/push_game.py"
--'  18  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,18,0,1588682022,"~/projects/playground/python/push_game/push_game.py"
--'  18  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,18,0,1588682022,"~/projects/playground/python/push_game/push_game.py"
--'  18  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,18,0,1588682022,"~/projects/playground/python/push_game/push_game.py"
--'  18  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,18,0,1588682022,"~/projects/playground/python/push_game/push_game.py"
--'  18  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,18,0,1588682022,"~/projects/playground/python/push_game/push_game.py"
--'  18  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,18,0,1588682022,"~/projects/playground/python/push_game/push_game.py"
--'  18  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,18,0,1588682022,"~/projects/playground/python/push_game/push_game.py"
--'  18  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,18,0,1588682022,"~/projects/playground/python/push_game/push_game.py"
--'  18  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,18,0,1588682022,"~/projects/playground/python/push_game/push_game.py"
--'  18  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,18,0,1588682022,"~/projects/playground/python/push_game/push_game.py"
--'  18  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,18,0,1588682022,"~/projects/playground/python/push_game/push_game.py"
--'  18  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,18,0,1588682022,"~/projects/playground/python/push_game/push_game.py"
--'  19  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,19,0,1588682001,"~/projects/playground/python/push_game/push_game.py"
--'  19  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,19,0,1588682001,"~/projects/playground/python/push_game/push_game.py"
--'  19  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,19,0,1588682001,"~/projects/playground/python/push_game/push_game.py"
--'  19  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,19,0,1588682001,"~/projects/playground/python/push_game/push_game.py"
--'  19  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,19,0,1588682001,"~/projects/playground/python/push_game/push_game.py"
--'  19  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,19,0,1588682001,"~/projects/playground/python/push_game/push_game.py"
--'  19  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,19,0,1588682001,"~/projects/playground/python/push_game/push_game.py"
--'  19  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,19,0,1588682001,"~/projects/playground/python/push_game/push_game.py"
--'  19  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,19,0,1588682001,"~/projects/playground/python/push_game/push_game.py"
--'  19  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,19,0,1588682001,"~/projects/playground/python/push_game/push_game.py"
--'  19  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,19,0,1588682001,"~/projects/playground/python/push_game/push_game.py"
--'  19  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,19,0,1588682001,"~/projects/playground/python/push_game/push_game.py"
--'  17  17  ~/projects/playground/python/push_game/push_game.py
-|4,39,17,17,1588681954,"~/projects/playground/python/push_game/push_game.py"
--'  17  17  ~/projects/playground/python/push_game/push_game.py
-|4,39,17,17,1588681954,"~/projects/playground/python/push_game/push_game.py"
--'  17  17  ~/projects/playground/python/push_game/push_game.py
-|4,39,17,17,1588681954,"~/projects/playground/python/push_game/push_game.py"
--'  17  17  ~/projects/playground/python/push_game/push_game.py
-|4,39,17,17,1588681954,"~/projects/playground/python/push_game/push_game.py"
--'  17  17  ~/projects/playground/python/push_game/push_game.py
-|4,39,17,17,1588681954,"~/projects/playground/python/push_game/push_game.py"
--'  17  17  ~/projects/playground/python/push_game/push_game.py
-|4,39,17,17,1588681954,"~/projects/playground/python/push_game/push_game.py"
--'  17  17  ~/projects/playground/python/push_game/push_game.py
-|4,39,17,17,1588681954,"~/projects/playground/python/push_game/push_game.py"
--'  17  17  ~/projects/playground/python/push_game/push_game.py
-|4,39,17,17,1588681954,"~/projects/playground/python/push_game/push_game.py"
--'  17  17  ~/projects/playground/python/push_game/push_game.py
-|4,39,17,17,1588681954,"~/projects/playground/python/push_game/push_game.py"
--'  17  17  ~/projects/playground/python/push_game/push_game.py
-|4,39,17,17,1588681954,"~/projects/playground/python/push_game/push_game.py"
--'  17  17  ~/projects/playground/python/push_game/push_game.py
-|4,39,17,17,1588681954,"~/projects/playground/python/push_game/push_game.py"
--'  17  17  ~/projects/playground/python/push_game/push_game.py
-|4,39,17,17,1588681954,"~/projects/playground/python/push_game/push_game.py"
+|4,39,1,0,1588694874,"~/projects/playground/python/push_game/push_game.py"
 -'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588681941,"~/projects/playground/python/push_game/push_game.py"
+|4,39,1,0,1588694874,"~/projects/playground/python/push_game/push_game.py"
 -'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588681941,"~/projects/playground/python/push_game/push_game.py"
+|4,39,1,0,1588694874,"~/projects/playground/python/push_game/push_game.py"
 -'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588681940,"~/projects/playground/python/push_game/push_game.py"
+|4,39,1,0,1588694874,"~/projects/playground/python/push_game/push_game.py"
 -'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588681940,"~/projects/playground/python/push_game/push_game.py"
--'  17  19  ~/projects/playground/python/push_game/push_game.py
-|4,39,17,19,1588681914,"~/projects/playground/python/push_game/push_game.py"
--'  17  19  ~/projects/playground/python/push_game/push_game.py
-|4,39,17,19,1588681914,"~/projects/playground/python/push_game/push_game.py"
--'  23  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,4,1588681477,"~/projects/playground/python/push_game/push_game.py"
--'  23  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,4,1588681477,"~/projects/playground/python/push_game/push_game.py"
--'  23  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,4,1588681477,"~/projects/playground/python/push_game/push_game.py"
--'  23  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,4,1588681477,"~/projects/playground/python/push_game/push_game.py"
--'  23  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,4,1588681477,"~/projects/playground/python/push_game/push_game.py"
--'  23  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,4,1588681477,"~/projects/playground/python/push_game/push_game.py"
--'  23  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,4,1588681477,"~/projects/playground/python/push_game/push_game.py"
--'  23  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,4,1588681477,"~/projects/playground/python/push_game/push_game.py"
--'  23  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,4,1588681477,"~/projects/playground/python/push_game/push_game.py"
--'  23  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,4,1588681477,"~/projects/playground/python/push_game/push_game.py"
--'  23  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,4,1588681477,"~/projects/playground/python/push_game/push_game.py"
--'  23  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,4,1588681477,"~/projects/playground/python/push_game/push_game.py"
--'  23  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,4,1588681477,"~/projects/playground/python/push_game/push_game.py"
--'  23  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,4,1588681477,"~/projects/playground/python/push_game/push_game.py"
--'  36  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,36,4,1588681360,"~/projects/playground/python/push_game/push_game.py"
--'  36  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,36,4,1588681360,"~/projects/playground/python/push_game/push_game.py"
--'  36  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,36,4,1588681360,"~/projects/playground/python/push_game/push_game.py"
--'  36  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,36,4,1588681360,"~/projects/playground/python/push_game/push_game.py"
--'  36  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,36,4,1588681360,"~/projects/playground/python/push_game/push_game.py"
--'  36  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,36,4,1588681360,"~/projects/playground/python/push_game/push_game.py"
--'  36  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,36,4,1588681360,"~/projects/playground/python/push_game/push_game.py"
--'  36  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,36,4,1588681360,"~/projects/playground/python/push_game/push_game.py"
--'  36  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,36,4,1588681360,"~/projects/playground/python/push_game/push_game.py"
--'  36  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,36,4,1588681360,"~/projects/playground/python/push_game/push_game.py"
--'  36  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,36,4,1588681360,"~/projects/playground/python/push_game/push_game.py"
--'  36  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,36,4,1588681360,"~/projects/playground/python/push_game/push_game.py"
--'  36  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,36,4,1588681360,"~/projects/playground/python/push_game/push_game.py"
--'  36  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,36,4,1588681360,"~/projects/playground/python/push_game/push_game.py"
--'  36  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,36,4,1588681360,"~/projects/playground/python/push_game/push_game.py"
--'  36  4  ~/projects/playground/python/push_game/push_game.py
-|4,39,36,4,1588681360,"~/projects/playground/python/push_game/push_game.py"
--'  23  5  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,5,1588681250,"~/projects/playground/python/push_game/push_game.py"
--'  23  5  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,5,1588681250,"~/projects/playground/python/push_game/push_game.py"
--'  19  12  ~/projects/playground/python/push_game/push_game.py
-|4,39,19,12,1588681237,"~/projects/playground/python/push_game/push_game.py"
--'  19  12  ~/projects/playground/python/push_game/push_game.py
-|4,39,19,12,1588681237,"~/projects/playground/python/push_game/push_game.py"
--'  19  12  ~/projects/playground/python/push_game/push_game.py
-|4,39,19,12,1588681237,"~/projects/playground/python/push_game/push_game.py"
--'  19  12  ~/projects/playground/python/push_game/push_game.py
-|4,39,19,12,1588681237,"~/projects/playground/python/push_game/push_game.py"
+|4,39,1,0,1588694874,"~/projects/playground/python/push_game/push_game.py"
+-'  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
+-'  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
+-'  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
+-'  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
+-'  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
+-'  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
+-'  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
+-'  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
+-'  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
+-'  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
+-'  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
+-'  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
+-'  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
+-'  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
+-'  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
+-'  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
+-'  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
+-'  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
+-'  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
+-'  23  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
 -'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588681171,"~/projects/playground/python/push_game/push_game.py"
+|4,39,1,0,1588694790,"~/projects/playground/python/push_game/push_game.py"
 -'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588681171,"~/projects/playground/python/push_game/push_game.py"
--'  16  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,16,0,1588681170,"~/projects/playground/python/push_game/push_game.py"
--'  16  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,16,0,1588681170,"~/projects/playground/python/push_game/push_game.py"
--'  16  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,16,0,1588681170,"~/projects/playground/python/push_game/push_game.py"
+|4,39,1,0,1588694790,"~/projects/playground/python/push_game/push_game.py"
+-'  1  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,1,0,1588694790,"~/projects/playground/python/push_game/push_game.py"
+-'  1  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,1,0,1588694790,"~/projects/playground/python/push_game/push_game.py"
+-'  1  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,1,0,1588694790,"~/projects/playground/python/push_game/push_game.py"
+-'  1  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,1,0,1588694790,"~/projects/playground/python/push_game/push_game.py"
+-'  1  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,1,0,1588694790,"~/projects/playground/python/push_game/push_game.py"
+-'  1  0  ~/projects/playground/python/push_game/push_game.py
+|4,39,1,0,1588694790,"~/projects/playground/python/push_game/push_game.py"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1588694462,"~/.vimrc"
+-'  30  0  ~/.vimrc
+|4,39,30,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
+-'  27  0  ~/.vimrc
+|4,39,27,0,1588694460,"~/.vimrc"
 
 # History of marks within files (newest to oldest):
+
+> ~/.vimrc
+	*	1588695285	0
+	"	63	0
+	^	65	33
+	.	63	0
+	+	114	26
+	+	123	0
+	+	123	1
+	+	23	9
+	+	22	29
+	+	104	17
+	+	23	25
+	+	123	69
+	+	114	25
+	+	123	67
+	+	116	41
+	+	119	22
+	+	123	0
+	+	125	0
+	+	124	67
+	+	139	0
+	+	138	0
+	+	137	0
+	+	136	0
+	+	135	0
+	+	136	0
+	+	137	0
+	+	41	27
+	+	90	0
+	+	45	32
+	+	44	23
+	+	88	28
+	+	89	8
+	+	50	28
+	+	52	40
+	+	51	24
+	+	86	0
+	+	83	6
+	+	82	0
+	+	81	0
+	+	80	0
+	+	79	0
+	+	78	0
+	+	79	0
+	+	81	0
+	+	82	0
+	+	81	0
+	+	84	60
+	+	51	23
+	+	51	7
+	+	52	7
+	+	51	24
+	+	52	40
+	+	51	0
+	+	20	21
+	+	20	14
+	+	20	9
+	+	81	7
+	+	79	7
+	+	132	0
+	+	139	0
+	+	131	0
+	+	132	0
+	+	109	0
+	+	86	0
+	+	84	36
+	+	87	0
+	+	79	11
+	+	81	11
+	+	84	36
+	+	85	0
+	+	131	2
+	+	54	33
+	+	55	27
+	+	72	22
+	+	74	17
+	+	75	26
+	+	56	7
+	+	55	7
+	+	75	7
+	+	75	0
+	+	3	22
+	+	9	0
+	+	6	35
+	+	2	0
+	+	118	0
+	+	117	20
+	+	118	23
+	+	42	0
+	+	30	0
+	+	85	0
+	+	61	0
+	+	72	0
+	+	68	0
+	+	16	78
+	+	17	9
+	+	63	74
+	+	65	12
+	+	67	100
+	+	70	0
+	+	69	23
+	+	66	0
+	+	63	0
+
+> ~/projects/playground/python/push_game/push_game.py
+	*	1588694925	0
+	"	1	0
+	^	1	1
+	.	1	1
+	+	1	0
+	+	94	10
+	+	95	21
+	+	95	0
+	+	19	0
+	+	1	1
+
+> ~/projects/playground/python/push_game/NERD_tree_1
+	*	1588694885	0
+	"	5	0
+	.	1	0
+	+	1	0
+
+> /usr/share/vim/vim81/doc/if_pyth.txt
+	*	1588694034	0
+	"	855	56
+
+> ~/.bashrc
+	*	1588693211	0
+	"	11	0
+	.	11	0
+	+	20	0
+	+	20	7
+	+	21	63
+	+	26	1
+	+	20	0
+	+	10	0
+	+	12	0
+	+	11	0
+
+> /home/.bashrc
+	*	1588693145	0
+	"	1	0
+
+> ~/.vimr
+	*	1588692449	0
+	"	1	0
+
+> /etc/apt/sources.list
+	*	1588691278	0
+	"	58	0
+	.	58	0
+	+	58	0
+
+> ~/.profile
+	*	1588686991	0
+	"	9	0
+
+> ~/.tmux.conf.local
+	*	1588686962	0
+	"	62	0
+	^	300	27
+	.	293	0
+	+	278	0
+	+	281	0
+	+	289	0
+	+	290	0
+	+	291	0
+	+	292	0
+	+	293	0
+	+	295	26
+	+	296	10
+	+	295	25
+	+	300	26
+	+	281	0
+	+	289	0
+	+	290	0
+	+	289	0
+	+	291	0
+	+	292	0
+	+	293	0
 
 > ~/projects/playground/go/test.go
 	*	1588682888	0
@@ -391,59 +594,6 @@ $
 	.	8	0
 	+	14	0
 	+	8	0
-
-> ~/projects/playground/python/push_game/push_game.py
-	*	1588682851	0
-	"	49	4
-	.	19	0
-	+	1	0
-	+	94	10
-	+	95	21
-	+	95	0
-	+	19	0
-
-> ~/.vimrc
-	*	1588678416	0
-	"	56	1
-	^	56	2
-	.	56	1
-	+	5	15
-	+	6	10
-	+	33	0
-	+	38	26
-	+	39	0
-	+	38	0
-	+	37	0
-	+	36	0
-	+	35	0
-	+	42	15
-	+	41	7
-	+	43	18
-	+	23	28
-	+	2	0
-	+	23	24
-	+	43	14
-	+	53	25
-	+	45	25
-	+	27	0
-	+	26	6
-	+	26	36
-	+	56	68
-	+	11	0
-	+	10	17
-	+	30	0
-	+	28	30
-	+	60	62
-	+	47	20
-	+	48	24
-	+	49	23
-	+	50	23
-	+	51	20
-	+	52	21
-	+	53	26
-	+	56	0
-	+	57	0
-	+	56	1
 
 > ~/vimrc
 	*	1588676100	0
@@ -530,41 +680,6 @@ $
 	^	1	33
 	.	1	32
 	+	1	32
-
-> ~/.tmux.conf.local
-	*	1587464485	0
-	"	296	0
-	^	300	27
-	.	293	0
-	+	278	0
-	+	281	0
-	+	289	0
-	+	290	0
-	+	291	0
-	+	292	0
-	+	293	0
-	+	295	26
-	+	296	10
-	+	295	25
-	+	300	26
-	+	281	0
-	+	289	0
-	+	290	0
-	+	289	0
-	+	291	0
-	+	292	0
-	+	293	0
-
-> ~/.bashrc
-	*	1587463940	0
-	"	17	0
-	^	23	2
-	.	17	0
-	+	17	0
-	+	17	7
-	+	18	63
-	+	23	1
-	+	17	0
 
 > ~/.bashr
 	*	1587463817	0
