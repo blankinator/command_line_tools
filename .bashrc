@@ -127,3 +127,10 @@ if ! shopt -oq posix; then
 fi
 if [ $TILIX_ID ] || [ $VTE_VERSION ] ; then source /etc/profile.d/vte.sh; fi # Ubuntu Budgie END
 
+# export the necessary go variables
+export GOPATH=$HOME/.go
+export GOROOT=/usr/lib/go
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

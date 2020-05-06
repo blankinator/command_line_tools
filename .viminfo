@@ -11,114 +11,158 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~Msle0~/'
+~MSle0~/You
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1588695355,,"q"
-:source .vimrc
-|2,0,1588695281,,"source .vimrc"
-:w
-|2,0,1588695278,,"w"
-:source .vimr
-|2,0,1588694726,,"source .vimr"
-:w :source .vimrc
-|2,0,1588694718,,"w :source .vimrc"
-:YcmRestartServer
-|2,0,1588694672,,"YcmRestartServer"
-:PluginUpdate
-|2,0,1588694467,,"PluginUpdate"
-:q!
-|2,0,1588695052,,"q!"
 :PluginInstall
-|2,0,1588694447,,"PluginInstall"
-:BundleInstall
-|2,0,1588694107,,"BundleInstall"
-:BundleClean
-|2,0,1588694067,,"BundleClean"
-:BundleUpdate
-|2,0,1588694048,,"BundleUpdate"
-:YcmDebugInfo
-|2,0,1588693405,,"YcmDebugInfo"
+|2,0,1588773683,,"PluginInstall"
+:source .vimrc
+|2,0,1588773677,,"source .vimrc"
+:w
+|2,0,1588773670,,"w"
+:h tagbar-issues
+|2,0,1588773013,,"h tagbar-issues"
+:! firefox index.html
+|2,0,1588771289,,"! firefox index.html"
+:RainbowToggle
+|2,0,1588771069,,"RainbowToggle"
+:e!
+|2,0,1588770578,,"e!"
+:YcmRestartServer
+|2,0,1588770411,,"YcmRestartServer"
+: w
+|2,0,1588770366,," w"
 :PluginClean
-|2,0,1588693243,,"PluginClean"
+|2,0,1588770360,,"PluginClean"
+:PluginUpdate
+|2,0,1588770339,,"PluginUpdate"
+:q!
+|2,0,1588770218,,"q!"
+:help jedi
+|2,0,1588769894,,"help jedi"
+:help jedivim
+|2,0,1588769891,,"help jedivim"
+:jedivim help
+|2,0,1588769888,,"jedivim help"
+:.,$!1 2
+|2,0,1588769876,,".,$!1 2"
+:q
+|2,0,1588769867,,"q"
+:CtrlPBuffer
+|2,0,1588768770,,"CtrlPBuffer"
+:q:
+|2,0,1588769501,,"q:"
+:Autopep8 --range 1 5
+|2,0,1588757977,,"Autopep8 --range 1 5"
+:help autopep8
+|2,0,1588757959,,"help autopep8"
+::
+|2,0,1588757953,,":"
+:Autopep8
+|2,0,1588757933,,"Autopep8"
+:call Autopep8()
+|2,0,1588757887,,"call Autopep8()"
+:autopep8()
+|2,0,1588757863,,"autopep8()"
+:W
+|2,0,1588758737,,"W"
+:help flake8
+|2,0,1588757995,,"help flake8"
+:BundleInstall
+|2,0,1588757898,,"BundleInstall"
+:pep
+|2,0,1588757795,,"pep"
+:his /
+|2,0,1588755359,,"his /"
+:s
+|2,0,1588755342,,"s"
+:his
+|2,0,1588755330,,"his"
+:BundleInstalljj:
+|2,0,1588755296,,"BundleInstalljj:"
+:se<Up>
+|2,0,1588755233,,"se<Up>"
+:BundleInstalljj
+|2,0,1588755175,,"BundleInstalljj"
+:BundleClean
+|2,0,1588754932,,"BundleClean"
+:BundleUpdate
+|2,0,1588754833,,"BundleUpdate"
+:Gstatus
+|2,0,1588754534,,"Gstatus"
+:b 3
+|2,0,1588753678,,"b 3"
+:ls
+|2,0,1588753671,,"ls"
+:cb 3
+|2,0,1588753664,,"cb 3"
+:cb 1
+|2,0,1588753644,,"cb 1"
+:cb 2
+|2,0,1588753641,,"cb 2"
+:ALEFix
+|2,0,1588753890,,"ALEFix"
+:ALEInfo
+|2,0,1588753850,,"ALEInfo"
+:CtrlP
+|2,0,1588753214,,"CtrlP"
 :wq
-|2,0,1588693213,,"wq"
-:Q!
-|2,0,1588692783,,"Q!"
-:PlugiInstall
-|2,0,1588692676,,"PlugiInstall"
-:YcmToggleLogs stderr
-|2,0,1588691959,,"YcmToggleLogs stderr"
-:YmRestartServer
-|2,0,1588691931,,"YmRestartServer"
-:YmcRestartServer
-|2,0,1588691919,,"YmcRestartServer"
-:::
-|2,0,1588691480,,"::"
-:YcmRestartSever
-|2,0,1588691470,,"YcmRestartSever"
-:PluginUpdate YouCompleteMe
-|2,0,1588691458,,"PluginUpdate YouCompleteMe"
-:PlugUpdate YouCompleteMe
-|2,0,1588691451,,"PlugUpdate YouCompleteMe"
-:wq!
-|2,0,1588691276,,"wq!"
-:source .vrimc
-|2,0,1588689723,,"source .vrimc"
-:source .
-|2,0,1588689158,,"source ."
-:colors zenburn
-|2,0,1588688904,,"colors zenburn"
-:colors solarized
-|2,0,1588688897,,"colors solarized"
-:colors solaris
-|2,0,1588688809,,"colors solaris"
-:source. vimrc
-|2,0,1588682188,,"source. vimrc"
-:source .bimrc
-|2,0,1588682080,,"source .bimrc"
-:so %
-|2,0,1588682022,,"so %"
-:r
-|2,0,1588681998,,"r"
-:Q
-|2,0,1588678518,,"Q"
-:Ex projects/playground/python/push_game/pus:Q`
-|2,0,1588678337,,"Ex projects/playground/python/push_game/pus:Q`"
-:vs .vimrc
-|2,0,1588678187,,"vs .vimrc"
-:Ex .vimr
-|2,0,1588678166,,"Ex .vimr"
-:e .vimrc
-|2,0,1588678161,,"e .vimrc"
-:za
-|2,0,1588676270,,"za"
-:source ~/.vimrc
-|2,0,1588676237,,"source ~/.vimrc"
-:Ex
-|2,0,1588676169,,"Ex"
-:Ec
-|2,0,1588676166,,"Ec"
-:Wx
-|2,0,1588676164,,"Wx"
-:o ./vimrc
-|2,0,1588676100,,"o ./vimrc"
-:~/.vimrc
-|2,0,1588676090,,"~/.vimrc"
-:'<,:o
-|2,0,1588676076,,"'<,:o"
-:sp projects/playground/python/push_game/push_game.py
-|2,0,1588675326,,"sp projects/playground/python/push_game/push_game.py"
-:b! 2
-|2,0,1588675275,,"b! 2"
-:b! 1
-|2,0,1588675271,,"b! 1"
+|2,0,1588752433,,"wq"
+:yapf
+|2,0,1588709296,,"yapf"
+:ALEFixSuggest
+|2,0,1588709271,,"ALEFixSuggest"
+:ALEFix suggest
+|2,0,1588709265,,"ALEFix suggest"
 
 # Search String History (newest to oldest):
+??rain
+|2,1,1588771087,63,"rain"
+??sour
+|2,1,1588770709,63,"sour"
+?/rainbow
+|2,1,1588770663,47,"rainbow"
+?/rainvo
+|2,1,1588770661,47,"rainvo"
+??You
+|2,1,1588770131,63,"You"
+?/usage
+|2,1,1588769900,47,"usage"
+??ctrl
+|2,1,1588766311,63,"ctrl"
+?/tree
+|2,1,1588760353,47,"tree"
+?/nerd
+|2,1,1588759871,47,"nerd"
+??nerd
+|2,1,1588759615,63,"nerd"
+?/W
+|2,1,1588758740,47,"W"
+? \<solve\>
+|2,1,1588758517,,"\\<solve\\>"
+?/pep
+|2,1,1588757872,47,"pep"
+??leader
+|2,1,1588757821,63,"leader"
+??pep
+|2,1,1588757798,63,"pep"
+??tree
+|2,1,1588756566,63,"tree"
+?/source
+|2,1,1588755405,47,"source"
+??jedi
+|2,1,1588755014,63,"jedi"
+??indent
+|2,1,1588754687,63,"indent"
+??auto
+|2,1,1588754566,63,"auto"
+?/ctrl
+|2,1,1588753153,47,"ctrl"
+??go
+|2,1,1588707172,63,"go"
 ? '
 |2,1,1588694074,,"'"
 ??nu
@@ -142,401 +186,557 @@ $
 
 # Input Line History (newest to oldest):
 @y
-|2,3,1588694069,,"y"
+|2,3,1588770362,,"y"
+@/home/alex/projects/trade_master/backend/data/historic_data_api/data_transformation/fxt_file_creator/test.c
+|2,3,1588759916,,"/home/alex/projects/trade_master/backend/data/historic_data_api/data_transformation/fxt_file_creator/test.c"
+@Y
+|2,3,1588754933,,"Y"
 
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	
-|3,0,0,1,1,0,1588678166,""
-""1	LINE	0
-	autocmd StdinReadPre * let s:std_in=1
-|3,1,1,1,1,0,1588695277,"autocmd StdinReadPre * let s:std_in=1"
+"0	CHAR	0
+	w"::uu::wjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkjhhhhhhhhh n n n njkhhhh n
+|3,0,0,0,1,0,1588769498,"w\"::uu::wjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkjhhhhhhhhh n n n njkhhhh n"
+"1	LINE	0
+	" add toggle for dark and light mode
+|3,0,1,1,1,0,1588773650,"\" add toggle for dark and light mode"
 "2	LINE	0
-	
-|3,0,2,1,1,0,1588694908,""
+	jkdd
+|3,0,2,1,1,0,1588773648,"jkdd"
 "3	LINE	0
-	autocmd StdinReadPre * let s:std_in=1
-|3,0,3,1,1,0,1588694905,"autocmd StdinReadPre * let s:std_in=1"
+	"call togglebg#map("<F5>")
+|3,0,3,1,1,0,1588773645,"\"call togglebg#map(\"<F5>\")"
 "4	LINE	0
-	autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-|3,0,4,1,1,0,1588694903,"autocmd VimEnter * if argc() == 0 && !exists(\"s:std_in\") | NERDTree | endif"
+	set RainbowToggle
+|3,0,4,1,1,0,1588770908,"set RainbowToggle"
 "5	LINE	0
 	
-|3,0,5,1,1,0,1588693211,""
+|3,0,5,1,1,0,1588760040,""
 "6	LINE	0
-	tmux
-|3,0,6,1,1,0,1588693211,"tmux"
+	
+|3,0,6,1,1,0,1588760040,""
 "7	LINE	0
-	deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
-|3,0,7,1,1,0,1588691271,"deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+	
+|3,0,7,1,1,0,1588760039,""
 "8	LINE	0
 	
-|3,0,8,1,1,0,1588689235,""
-"9	LINE	0
-	call togglebg#map("<F5>")
-|3,0,9,1,1,0,1588689231,"call togglebg#map(\"<F5>\")"
-"-	CHAR	0
-	m
-|3,0,36,0,1,0,1588694867,"m"
+|3,0,8,1,1,0,1588760039,""
+"9	CHAR	0
+	
+	" map close tab to ctrl + 2
+	nmap <leader>w :q<CR>
+	nmap <leader>W :q!<CR>
+|3,0,9,0,4,0,1588759069,"","\" map close tab to ctrl + 2","nmap <leader>w :q<CR>","nmap <leader>W :q!<CR>"
+"j	CHAR	0
+	kjjjjjjjjjjjjjjjjjjj tjkj€kb€kbjkkjkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkk:jkjjjjjkjjkkjjj/nerdjjkjjjjjjjjoiset €kb€kb€kb€kb€kb€kbset€kb€kb€kbset modifiable:w
+|3,0,19,0,1,0,1588759894,"kjjjjjjjjjjjjjjjjjjj tjkj€kb€kbjkkjkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkk:jkjjjjjkjjkkjjj/nerdjjkjjjjjjjjoiset €kb€kb€kb€kb€kb€kbset€kb€kb€kbset modifiable:w"
+"l	CHAR	0
+	\L
+|3,0,21,0,1,0,1588755300,"\\L"
+"q	CHAR	0
+	?€kb€kb
+|3,0,26,0,1,0,1588755371,"?€kb€kb"
+""-	CHAR	0
+	"
+|3,1,36,0,1,0,1588772800,"\""
 
 # File marks:
-'0  63  0  ~/.vimrc
-|4,48,63,0,1588695355,"~/.vimrc"
-'1  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,49,1,0,1588694927,"~/projects/playground/python/push_game/push_game.py"
-'2  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,50,1,0,1588694874,"~/projects/playground/python/push_game/push_game.py"
-'3  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,51,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
-'4  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,52,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
-'5  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,53,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
-'6  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,54,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
-'7  30  0  ~/.vimrc
-|4,55,30,0,1588694460,"~/.vimrc"
-'8  27  0  ~/.vimrc
-|4,56,27,0,1588694460,"~/.vimrc"
-'9  43  0  ~/.vimrc
-|4,57,43,0,1588694080,"~/.vimrc"
+'0  5  0  ~/projects/playground/go/NERD_tree_1
+|4,48,5,0,1588773713,"~/projects/playground/go/NERD_tree_1"
+'1  185  20  ~/.vimrc
+|4,49,185,20,1588773701,"~/.vimrc"
+'2  159  0  ~/.vimrc
+|4,50,159,0,1588773610,"~/.vimrc"
+'3  159  0  ~/.vimrc
+|4,51,159,0,1588773610,"~/.vimrc"
+'4  1  0  ~/projects/playground/go/NERD_tree_1
+|4,52,1,0,1588773335,"~/projects/playground/go/NERD_tree_1"
+'5  5  0  ~/projects/playground/go/NERD_tree_1
+|4,53,5,0,1588773335,"~/projects/playground/go/NERD_tree_1"
+'6  88  8  ~/projects/prometheus/frontend-test/index.html
+|4,54,88,8,1588771352,"~/projects/prometheus/frontend-test/index.html"
+'7  88  8  ~/projects/prometheus/frontend-test/index.html
+|4,55,88,8,1588771352,"~/projects/prometheus/frontend-test/index.html"
+'8  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,56,11,0,1588771250,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+'9  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,57,11,0,1588771250,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
 
 # Jumplist (newest first):
--'  63  0  ~/.vimrc
-|4,39,63,0,1588695355,"~/.vimrc"
--'  39  0  ~/.vimrc
-|4,39,39,0,1588695003,"~/.vimrc"
--'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588694927,"~/projects/playground/python/push_game/push_game.py"
--'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588694927,"~/projects/playground/python/push_game/push_game.py"
--'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588694927,"~/projects/playground/python/push_game/push_game.py"
--'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588694927,"~/projects/playground/python/push_game/push_game.py"
--'  72  0  ~/.vimrc
-|4,39,72,0,1588694911,"~/.vimrc"
--'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588694874,"~/projects/playground/python/push_game/push_game.py"
--'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588694874,"~/projects/playground/python/push_game/push_game.py"
--'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588694874,"~/projects/playground/python/push_game/push_game.py"
--'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588694874,"~/projects/playground/python/push_game/push_game.py"
--'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588694874,"~/projects/playground/python/push_game/push_game.py"
--'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588694874,"~/projects/playground/python/push_game/push_game.py"
--'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588694874,"~/projects/playground/python/push_game/push_game.py"
--'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588694874,"~/projects/playground/python/push_game/push_game.py"
--'  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
--'  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
--'  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
--'  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
--'  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
--'  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
--'  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
--'  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
--'  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
--'  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
--'  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
--'  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
--'  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
--'  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
--'  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
--'  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
--'  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
--'  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
--'  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
--'  23  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,23,0,1588694860,"~/projects/playground/python/push_game/push_game.py"
--'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588694790,"~/projects/playground/python/push_game/push_game.py"
--'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588694790,"~/projects/playground/python/push_game/push_game.py"
--'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588694790,"~/projects/playground/python/push_game/push_game.py"
--'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588694790,"~/projects/playground/python/push_game/push_game.py"
--'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588694790,"~/projects/playground/python/push_game/push_game.py"
--'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588694790,"~/projects/playground/python/push_game/push_game.py"
--'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588694790,"~/projects/playground/python/push_game/push_game.py"
--'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1588694790,"~/projects/playground/python/push_game/push_game.py"
+-'  5  0  ~/projects/playground/go/NERD_tree_1
+|4,39,5,0,1588773713,"~/projects/playground/go/NERD_tree_1"
+-'  185  20  ~/.vimrc
+|4,39,185,20,1588773701,"~/.vimrc"
 -'  1  0  ~/.vimrc
-|4,39,1,0,1588694462,"~/.vimrc"
--'  30  0  ~/.vimrc
-|4,39,30,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
--'  27  0  ~/.vimrc
-|4,39,27,0,1588694460,"~/.vimrc"
+|4,39,1,0,1588773629,"~/.vimrc"
+-'  159  0  ~/.vimrc
+|4,39,159,0,1588773610,"~/.vimrc"
+-'  159  0  ~/.vimrc
+|4,39,159,0,1588773610,"~/.vimrc"
+-'  1  0  ~/projects/playground/go/NERD_tree_1
+|4,39,1,0,1588773415,"~/projects/playground/go/NERD_tree_1"
+-'  5  0  ~/projects/playground/go/NERD_tree_1
+|4,39,5,0,1588773335,"~/projects/playground/go/NERD_tree_1"
+-'  5  0  ~/projects/playground/go/NERD_tree_1
+|4,39,5,0,1588773335,"~/projects/playground/go/NERD_tree_1"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1588772946,"~/.vimrc"
+-'  1  0  ~/projects/playground/go/NERD_tree_1
+|4,39,1,0,1588772878,"~/projects/playground/go/NERD_tree_1"
+-'  1  0  ~/projects/playground/go/NERD_tree_1
+|4,39,1,0,1588772878,"~/projects/playground/go/NERD_tree_1"
+-'  88  8  ~/projects/prometheus/frontend-test/index.html
+|4,39,88,8,1588771352,"~/projects/prometheus/frontend-test/index.html"
+-'  88  8  ~/projects/prometheus/frontend-test/index.html
+|4,39,88,8,1588771352,"~/projects/prometheus/frontend-test/index.html"
+-'  88  8  ~/projects/prometheus/frontend-test/index.html
+|4,39,88,8,1588771352,"~/projects/prometheus/frontend-test/index.html"
+-'  88  8  ~/projects/prometheus/frontend-test/index.html
+|4,39,88,8,1588771352,"~/projects/prometheus/frontend-test/index.html"
+-'  87  12  ~/projects/prometheus/frontend-test/index.html
+|4,39,87,12,1588771270,"~/projects/prometheus/frontend-test/index.html"
+-'  87  12  ~/projects/prometheus/frontend-test/index.html
+|4,39,87,12,1588771270,"~/projects/prometheus/frontend-test/index.html"
+-'  87  12  ~/projects/prometheus/frontend-test/index.html
+|4,39,87,12,1588771270,"~/projects/prometheus/frontend-test/index.html"
+-'  87  12  ~/projects/prometheus/frontend-test/index.html
+|4,39,87,12,1588771270,"~/projects/prometheus/frontend-test/index.html"
+-'  90  0  ~/projects/prometheus/frontend-test/index.html
+|4,39,90,0,1588771266,"~/projects/prometheus/frontend-test/index.html"
+-'  23  0  ~/projects/prometheus/frontend-test/index.html
+|4,39,23,0,1588771266,"~/projects/prometheus/frontend-test/index.html"
+-'  90  0  ~/projects/prometheus/frontend-test/index.html
+|4,39,90,0,1588771266,"~/projects/prometheus/frontend-test/index.html"
+-'  23  0  ~/projects/prometheus/frontend-test/index.html
+|4,39,23,0,1588771266,"~/projects/prometheus/frontend-test/index.html"
+-'  90  0  ~/projects/prometheus/frontend-test/index.html
+|4,39,90,0,1588771266,"~/projects/prometheus/frontend-test/index.html"
+-'  23  0  ~/projects/prometheus/frontend-test/index.html
+|4,39,23,0,1588771266,"~/projects/prometheus/frontend-test/index.html"
+-'  90  0  ~/projects/prometheus/frontend-test/index.html
+|4,39,90,0,1588771266,"~/projects/prometheus/frontend-test/index.html"
+-'  23  0  ~/projects/prometheus/frontend-test/index.html
+|4,39,23,0,1588771266,"~/projects/prometheus/frontend-test/index.html"
+-'  1  0  ~/projects/prometheus/frontend-test/index.html
+|4,39,1,0,1588771263,"~/projects/prometheus/frontend-test/index.html"
+-'  1  0  ~/projects/prometheus/frontend-test/index.html
+|4,39,1,0,1588771263,"~/projects/prometheus/frontend-test/index.html"
+-'  1  0  ~/projects/prometheus/frontend-test/index.html
+|4,39,1,0,1588771263,"~/projects/prometheus/frontend-test/index.html"
+-'  1  0  ~/projects/prometheus/frontend-test/index.html
+|4,39,1,0,1588771263,"~/projects/prometheus/frontend-test/index.html"
+-'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,11,0,1588771250,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,11,0,1588771250,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,11,0,1588771250,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,11,0,1588771250,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,11,0,1588771250,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,11,0,1588771250,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,11,0,1588771250,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,11,0,1588771250,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  70  5  ~/.vimrc
+|4,39,70,5,1588771245,"~/.vimrc"
+-'  70  5  ~/.vimrc
+|4,39,70,5,1588771245,"~/.vimrc"
+-'  70  5  ~/.vimrc
+|4,39,70,5,1588771245,"~/.vimrc"
+-'  70  5  ~/.vimrc
+|4,39,70,5,1588771245,"~/.vimrc"
+-'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,19,2,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,1,0,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,19,2,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,1,0,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,19,2,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,1,0,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,19,2,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,1,0,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,19,2,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,1,0,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,19,2,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,1,0,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,19,2,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,1,0,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,19,2,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,1,0,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,11,0,1588771103,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,11,0,1588771103,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,11,0,1588771103,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,11,0,1588771103,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,11,0,1588771103,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,11,0,1588771103,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,11,0,1588771103,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,11,0,1588771103,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1588771087,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1588771087,"~/.vimrc"
+-'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,19,2,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,1,0,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,19,2,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,1,0,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,19,2,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,1,0,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,19,2,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,1,0,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,19,2,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,1,0,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,19,2,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,1,0,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,19,2,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,1,0,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,19,2,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,1,0,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  70  26  ~/.vimrc
+|4,39,70,26,1588771043,"~/.vimrc"
+-'  70  26  ~/.vimrc
+|4,39,70,26,1588771043,"~/.vimrc"
+-'  29  0  ~/.vimrc
+|4,39,29,0,1588771027,"~/.vimrc"
+-'  29  0  ~/.vimrc
+|4,39,29,0,1588771027,"~/.vimrc"
+-'  29  0  ~/.vimrc
+|4,39,29,0,1588771027,"~/.vimrc"
+-'  29  0  ~/.vimrc
+|4,39,29,0,1588771027,"~/.vimrc"
+-'  29  0  ~/.vimrc
+|4,39,29,0,1588771027,"~/.vimrc"
+-'  29  0  ~/.vimrc
+|4,39,29,0,1588771027,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1588771021,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1588771021,"~/.vimrc"
+-'  17  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,17,0,1588771004,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  18  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,18,0,1588771004,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  18  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,18,0,1588771004,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  17  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,17,0,1588771004,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+-'  18  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+|4,39,18,0,1588771004,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
 
 # History of marks within files (newest to oldest):
 
 > ~/.vimrc
-	*	1588695285	0
-	"	63	0
-	^	65	33
-	.	63	0
-	+	114	26
-	+	123	0
-	+	123	1
-	+	23	9
-	+	22	29
-	+	104	17
-	+	23	25
-	+	123	69
-	+	114	25
-	+	123	67
-	+	116	41
-	+	119	22
-	+	123	0
-	+	125	0
-	+	124	67
-	+	139	0
-	+	138	0
-	+	137	0
-	+	136	0
-	+	135	0
-	+	136	0
-	+	137	0
-	+	41	27
-	+	90	0
-	+	45	32
-	+	44	23
-	+	88	28
-	+	89	8
-	+	50	28
-	+	52	40
-	+	51	24
-	+	86	0
-	+	83	6
-	+	82	0
-	+	81	0
-	+	80	0
-	+	79	0
-	+	78	0
-	+	79	0
-	+	81	0
-	+	82	0
-	+	81	0
-	+	84	60
-	+	51	23
-	+	51	7
-	+	52	7
-	+	51	24
-	+	52	40
-	+	51	0
-	+	20	21
-	+	20	14
-	+	20	9
-	+	81	7
-	+	79	7
-	+	132	0
-	+	139	0
-	+	131	0
-	+	132	0
-	+	109	0
-	+	86	0
-	+	84	36
-	+	87	0
-	+	79	11
-	+	81	11
-	+	84	36
-	+	85	0
-	+	131	2
-	+	54	33
-	+	55	27
-	+	72	22
-	+	74	17
-	+	75	26
-	+	56	7
-	+	55	7
-	+	75	7
-	+	75	0
-	+	3	22
+	*	1588773697	0
+	"	185	20
+	^	185	21
+	.	185	19
+	+	8	0
 	+	9	0
-	+	6	35
-	+	2	0
-	+	118	0
-	+	117	20
-	+	118	23
-	+	42	0
-	+	30	0
-	+	85	0
-	+	61	0
-	+	72	0
-	+	68	0
-	+	16	78
-	+	17	9
-	+	63	74
-	+	65	12
-	+	67	100
-	+	70	0
-	+	69	23
-	+	66	0
+	+	185	31
+	+	185	1
+	+	130	15
+	+	135	0
+	+	131	28
+	+	133	35
+	+	134	32
+	+	132	24
+	+	22	24
+	+	65	28
+	+	64	28
+	+	68	26
+	+	103	32
 	+	63	0
+	+	62	26
+	+	43	26
+	+	48	0
+	+	50	0
+	+	49	27
+	+	54	0
+	+	52	34
+	+	50	34
+	+	54	33
+	+	54	0
+	+	32	0
+	+	46	0
+	+	18	51
+	+	21	0
+	+	18	0
+	+	21	0
+	+	18	0
+	+	20	1
+	+	18	10
+	+	206	44
+	+	206	66
+	+	206	87
+	+	206	108
+	+	206	0
+	+	18	15
+	+	18	16
+	+	61	49
+	+	22	24
+	+	103	0
+	+	68	4
+	+	68	22
+	+	98	4
+	+	98	8
+	+	103	0
+	+	102	0
+	+	101	0
+	+	98	7
+	+	100	0
+	+	70	4
+	+	98	3
+	+	98	2
+	+	81	0
+	+	70	4
+	+	98	1
+	+	80	63
+	+	83	0
+	+	83	85
+	+	86	110
+	+	89	53
+	+	93	0
+	+	92	46
+	+	95	70
+	+	97	12
+	+	54	5
+	+	54	0
+	+	18	11
+	+	54	0
+	+	18	0
+	+	19	7
+	+	18	0
+	+	19	7
+	+	18	12
+	+	12	8
+	+	18	0
+	+	15	7
+	+	19	0
+	+	23	0
+	+	27	0
+	+	23	7
+	+	112	34
+	+	114	13
+	+	48	0
+	+	50	0
+	+	51	0
+	+	53	0
+	+	49	0
+	+	46	31
+	+	70	3
+	+	70	2
+	+	70	1
+	+	72	0
+	+	70	5
+	+	185	1
+	+	185	19
+
+> ~/projects/playground/go/test.go
+	*	1588773415	0
+	"	11	0
+	^	7	7
+	.	7	6
+	+	14	0
+	+	8	1
+	+	6	1
+	+	8	1
+	+	3	0
+	+	11	0
+	+	7	6
+
+> ~/projects/playground/go/__Tagbar__.1
+	*	1588773407	0
+	"	8	4
+	.	9	0
+	+	9	0
+
+> ~/projects/playground/go/NERD_tree_1
+	*	1588773339	0
+	"	5	0
+	.	1	0
+	+	1	0
+
+> ~/.vim/bundle/tagbar/doc/tagbar.txt
+	*	1588773335	0
+	"	1359	61
+
+> ~/projects/prometheus/frontend-test/index.html
+	*	1588771350	0
+	"	88	8
+	^	87	32
+	.	86	26
+	+	86	27
+	+	86	26
+
+> ~/projects/trade_master/backend/data/historic_data_api/data_transformation/fxt_creator.py
+	*	1588771119	0
+	"	18	0
+	^	20	22
+	.	20	21
+	+	590	0
+	+	20	21
+
+> ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
+	*	1588771110	0
+	"	11	0
+	.	1	0
+	+	1	0
+
+> ~/.vim/bundle/jedi-vim/doc/jedi-vim.txt
+	*	1588769972	0
+	"	532	47
+
+> ~/projects/trade_master/backend/data/historic_data_api/ControlP
+	*	1588768785	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/projects/trade_master/backend/data/historic_data_api/data_transformation/.fxt_creator.py.swp
+	*	1588767092	0
+	"	1	0
+
+> ~/NERD_tree_1
+	*	1588767016	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/file
+	*	1588766999	0
+	"	1	0
+
+> ~/fzf
+	*	1588766917	0
+	"	1	0
+
+> ~/projects/trade_master/backend/data/historic_data_api/data_transformation/fxt_file_creator/file_creator_tester.py
+	*	1588760045	0
+	"	599	1095
+	^	510	940
+	.	599	1094
+	+	1	22
+	+	121	283
+	+	158	304
+	+	244	556
+	+	364	691
+	+	434	815
+	+	509	951
+	+	599	1094
+
+> ~/ControlP
+	*	1588759655	0
+	"	10	0
+	.	2	0
+	+	1	0
+	+	2	0
 
 > ~/projects/playground/python/push_game/push_game.py
-	*	1588694925	0
-	"	1	0
-	^	1	1
-	.	1	1
+	*	1588759032	0
+	"	16	0
+	^	16	1
+	.	16	1
 	+	1	0
 	+	94	10
 	+	95	21
 	+	95	0
 	+	19	0
-	+	1	1
+	+	1	0
+	+	16	0
+	+	17	0
+	+	18	0
+	+	17	0
+	+	18	0
+	+	16	1
 
-> ~/projects/playground/python/push_game/NERD_tree_1
-	*	1588694885	0
-	"	5	0
+> ~/.vim/bundle/ale/doc/ale-python.txt
+	*	1588758009	0
+	"	275	60
+
+> ~/.vim/bundle/vim-autopep8/doc/autopep8.txt
+	*	1588757963	0
+	"	4	0
+
+> ~/projects/NERD_tree_1
+	*	1588757840	0
+	"	16	0
 	.	1	0
 	+	1	0
 
-> /usr/share/vim/vim81/doc/if_pyth.txt
-	*	1588694034	0
-	"	855	56
+> ~/projects/trade_master/backend/data/historic_data_api/data_source/app/app.py
+	*	1588754858	0
+	"	54	0
+	^	15	8
+	.	16	0
+	+	15	7
+	+	54	39
+	+	15	8
+	+	16	0
+
+> ~/Downloads/get_fxt
+	*	1588753435	0
+	"	1	0
+
+> ~/projects/trade_master/backend/data/historic_data_api/__Tagbar__.1
+	*	1588752902	0
+	"	1	0
+	.	4	0
+	+	4	0
+
+> ~/projects/trade_master/backend/data/historic_data_api/data_source/main.py
+	*	1588708553	0
+	"	3	1
+	^	3	3
+	.	3	0
+	+	3	0
 
 > ~/.bashrc
-	*	1588693211	0
-	"	11	0
-	.	11	0
+	*	1588707647	0
+	"	132	24
+	^	132	25
+	.	133	0
 	+	20	0
 	+	20	7
 	+	21	63
@@ -545,6 +745,97 @@ $
 	+	10	0
 	+	12	0
 	+	11	0
+	+	134	28
+	+	130	34
+	+	132	6
+	+	132	25
+	+	133	0
+	+	132	25
+	+	133	0
+
+> ~/.bashr
+	*	1588707600	0
+	"	2	0
+	^	2	0
+	.	1	1
+	+	1	1
+
+> ~/.profile
+	*	1588707164	0
+	"	27	0
+	.	28	0
+	+	28	0
+
+> ~/.vim/colors/deus.vim
+	*	1588706902	0
+	"	4748	849
+	^	4748	850
+	.	4748	849
+	+	6957	0
+	+	1	79
+	+	4748	849
+
+> ~/projects/playground/python/push_game/pr
+	*	1588699641	0
+	"	1	0
+
+> ~/projects/stock_analyzer/backend/data/storage/DataController.py
+	*	1588699512	0
+	"	6	8
+	^	7	18
+	.	7	17
+	+	7	17
+
+> ~/projects/stock_analyzer/backend/data/storage/DataSourceFactory.py
+	*	1588696364	0
+	"	6	0
+
+> ~/projects/stock_analyzer/backend/data/storage/NERD_tree_1
+	*	1588696172	0
+	"	6	0
+	.	1	0
+	+	1	0
+
+> ~/projects/playground/python/push_game/.push_game.py.swp
+	*	1588696018	0
+	"	2	0
+
+> ~/projects/playground/python/push_game/NERD_tree_1
+	*	1588696014	0
+	"	9	0
+	.	1	0
+	+	1	0
+
+> ~/.tmux.conf
+	*	1588695877	0
+	"	12	0
+	.	12	0
+	+	70	5
+	+	75	5
+	+	60	0
+	+	33	57
+	+	77	14
+	+	78	7
+	+	70	5
+	+	32	0
+	+	71	5
+	+	69	5
+	+	71	5
+	+	74	16
+	+	34	51
+	+	35	0
+	+	12	0
+
+> ~/.inputrc
+	*	1588695602	0
+	"	1	18
+	^	1	19
+	.	1	18
+	+	1	18
+
+> /usr/share/vim/vim81/doc/if_pyth.txt
+	*	1588694034	0
+	"	855	56
 
 > /home/.bashrc
 	*	1588693145	0
@@ -559,10 +850,6 @@ $
 	"	58	0
 	.	58	0
 	+	58	0
-
-> ~/.profile
-	*	1588686991	0
-	"	9	0
 
 > ~/.tmux.conf.local
 	*	1588686962	0
@@ -588,13 +875,6 @@ $
 	+	292	0
 	+	293	0
 
-> ~/projects/playground/go/test.go
-	*	1588682888	0
-	"	7	0
-	.	8	0
-	+	14	0
-	+	8	0
-
 > ~/vimrc
 	*	1588676100	0
 	"	1	0
@@ -608,10 +888,6 @@ $
 	"	5	0
 	.	1	0
 	+	1	0
-
-> ~/Downloads/get_fxt
-	*	1588675279	0
-	"	1	0
 
 > ~/projects/playground/CSV2FXT.mq4
 	*	1588584988	0
@@ -654,33 +930,9 @@ $
 	+	11	30
 	+	12	20
 
-> ~/.tmux.conf
-	*	1587652088	0
-	"	35	0
-	^	35	1
-	.	35	0
-	+	70	5
-	+	75	5
-	+	60	0
-	+	33	57
-	+	77	14
-	+	78	7
-	+	70	5
-	+	32	0
-	+	71	5
-	+	69	5
-	+	71	5
-	+	74	16
-	+	34	51
-	+	35	0
-
 > ~/projects/playground/elixir/hello_world.exs
 	*	1587645815	0
 	"	1	0
 	^	1	33
 	.	1	32
 	+	1	32
-
-> ~/.bashr
-	*	1587463817	0
-	"	1	0

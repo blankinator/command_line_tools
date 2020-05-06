@@ -1,12 +1,9 @@
-python3 from powerline.vim import setup as powerline_setup
-python3 powerline_setup()
-python3 del powerline_setup
+"python3 from powerline.vim import setup as powerline_setup
+"python3 powerline_setup()
+"python3 del powerline_setup
 
 let g:ycm_server_keep_logfiles = 1
 let g:ycm_server_log_level = 'debug'
-
-
-
 
 set laststatus=2
 set number
@@ -19,8 +16,14 @@ set hidden
 set encoding=utf-8
 set t_Co=256
 
-" set the leader key to space
+
+" close tab with ctr + w
+map" set the leader key to space
 let mapleader = "\<Space>"
+
+" map close tab to ctrl + 2
+nmap <leader>w :q<CR>
+nmap <leader>W :q!<CR>
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -37,15 +40,67 @@ Plugin 'tmhedberg/SimpylFold'
 
 " python aut-ident plugin
 Plugin 'vim-scripts/indentpython.vim'
+Plugin 'Yggdroot/indentLine'
 
 " python autocomplete plugin
 Bundle 'Valloric/YouCompleteMe'
+
+"Plugin 'davidhalter/jedi-vim'
+" for better usage of splits in vim
+"let g:jedi#use_splits_not_buffers = "left"
+"let g:jedi#use_tabs_not_buffers = 1
+" automatically select the first line in the popup for better flow
+"let g:jedi#popup_select_first = 0
+
 
 " python syntax checking
 Plugin 'vim-syntastic/syntastic'
 
 " python PEP8 checking
 Plugin 'nvie/vim-flake8'
+Plugin 'tell-k/vim-autopep8'
+autocmd FileType python noremap <buffer> <leader>r :call Autopep8()<CR>
+
+" auto pairs of brackets etc.
+Plugin 'jiangmiao/auto-pairs'
+
+" rainbow brackets
+Plugin 'luochen1990/rainbow'
+" enable by default
+au BufEnter * RainbowToggle
+let g:rainbow_conf = {
+\	'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
+\	'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
+\	'guis': [''],
+\	'cterms': [''],
+\	'operators': '_,_',
+\	'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
+\	'separately': {
+\		'*': {},
+\		'markdown': {
+\			'parentheses_options': 'containedin=markdownCode contained',
+\		},
+\		'lisp': {
+\			'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick', 'darkorchid3'], 
+\		},
+\		'haskell': {
+\			'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/\v\{\ze[^-]/ end=/}/ fold'], 
+\		},
+\		'vim': {
+\			'parentheses_options': 'containedin=vimFuncBody', 
+\		},
+\		'perl': {
+\			'syn_name_prefix': 'perlBlockFoldRainbow', 
+\		},
+\		'stylus': {
+\			'parentheses': ['start=/{/ end=/}/ fold contains=@colorableGroup'],
+\		},
+\		'css': 0, 
+\	}	
+\}
+
+" better commenting
+Plugin 'preservim/nerdcommenter'
 
 " python color_scheme plugin
 Plugin 'jnurmine/Zenburn'
@@ -54,6 +109,9 @@ Plugin 'altercation/vim-colors-solarized'
 " plugin for easier file browsing
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+
+set modifiable
 
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
@@ -69,7 +127,11 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let NERDTreeShowHidden=1
 
 " better searching in vi
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
+let g:ctrlp_map = '<leader>t'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_switch_buffer = 'et'
 
 " git integration
 Plugin 'tpope/vim-fugitive'
@@ -78,11 +140,49 @@ if has('gui_running')
 	set background=dark
 	colorscheme solarized
 else
-	colorscheme zenburn
+	colorscheme deus
 endif
       
-" add toggle for dark and light mode
-"call togglebg#map("<F5>")
+" powerline plugin
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+
+" class outline viewer plugin
+Plugin 'majutsushi/tagbar'
+nmap <leader>c :TagbarToggle<CR>
+
+" syntax highlighting
+Plugin 'dense-analysis/ale'
+let g:ale_linters = {
+      \   'python': ['flake8', 'pylint'],
+      \   'ruby': ['standardrb', 'rubocop'],
+      \   'javascript': ['eslint'],
+      \}
+let g:ale_fixers = {
+      \    'python': ['yapf'],
+      \}
+"nmap <leader>r :ALEFix<CR>
+let g:ale_fix_on_save = 1
+function! LinterStatus() abort
+	let l:counts = ale#statusline#Count(bufnr(''))
+
+	let l:all_errors = l:counts.error + l:counts.style_error
+	let l:all_non_errors = l:counts.total - l:all_errors
+
+	return l:counts.total == 0 ? '✨ all good ✨' : printf(
+		\   '😞 %dW %dE',
+		\   all_non_errors,
+		\   all_errors
+		\)
+endfunction
+
+set statusline=
+set statusline+=%m
+set statusline+=\ %f
+set statusline+=%=
+set statusline+=\ %{LinterStatus()}
+
+" vim-go plugin
+Plugin 'fatih/vim-go'
 
 " pretty python code
 let python_highlight_all = 1
