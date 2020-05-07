@@ -16,6 +16,8 @@ set hidden
 set encoding=utf-8
 set t_Co=256
 
+" enable search highlighting
+set hlsearch
 
 " close tab with ctr + w
 map" set the leader key to space
@@ -24,6 +26,13 @@ let mapleader = "\<Space>"
 " map close tab to ctrl + 2
 nmap <leader>w :q<CR>
 nmap <leader>W :q!<CR>
+
+" split pane
+nmap <leader>vs :vs<CR>
+nmap <leader>hs :hs<CR>
+
+" clear search highlighting
+map <esc> :noh<CR>
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -135,6 +144,7 @@ let g:ctrlp_switch_buffer = 'et'
 
 " git integration
 Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
 
 if has('gui_running')
 	set background=dark
@@ -183,6 +193,9 @@ set statusline+=\ %{LinterStatus()}
 
 " vim-go plugin
 Plugin 'fatih/vim-go'
+
+" buffer explorer plugin
+Plugin 'jlanzarotta/bufexplorer'
 
 " pretty python code
 let python_highlight_all = 1

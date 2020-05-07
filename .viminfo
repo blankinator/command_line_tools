@@ -11,34 +11,60 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/You
+~Msle0~/set
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:PluginInstall
-|2,0,1588773683,,"PluginInstall"
 :source .vimrc
-|2,0,1588773677,,"source .vimrc"
+|2,0,1588838912,,"source .vimrc"
+:PluginInstall
+|2,0,1588838899,,"PluginInstall"
 :w
-|2,0,1588773670,,"w"
+|2,0,1588838892,,"w"
+:PluginClean
+|2,0,1588838862,,"PluginClean"
+:PluginUpdate
+|2,0,1588838838,,"PluginUpdate"
+:k
+|2,0,1588838833,,"k"
+:q
+|2,0,1588838758,,"q"
+:e!
+|2,0,1588837555,,"e!"
+:gt
+|2,0,1588775189,,"gt"
+:e Makefile
+|2,0,1588775088,,"e Makefile"
+:o Ma	
+|2,0,1588775065,,"o Ma	"
+:make
+|2,0,1588774852,,"make"
+:vs
+|2,0,1588774825,,"vs"
+:ls
+|2,0,1588774740,,"ls"
+:o Makefile
+|2,0,1588774577,,"o Makefile"
+:! go run test.go
+|2,0,1588774467,,"! go run test.go"
+:GoImport
+|2,0,1588773781,,"GoImport"
+:GoImport\
+|2,0,1588773767,,"GoImport\\"
+: w w
+|2,0,1588774031,," w w"
 :h tagbar-issues
 |2,0,1588773013,,"h tagbar-issues"
 :! firefox index.html
 |2,0,1588771289,,"! firefox index.html"
 :RainbowToggle
 |2,0,1588771069,,"RainbowToggle"
-:e!
-|2,0,1588770578,,"e!"
 :YcmRestartServer
 |2,0,1588770411,,"YcmRestartServer"
 : w
 |2,0,1588770366,," w"
-:PluginClean
-|2,0,1588770360,,"PluginClean"
-:PluginUpdate
-|2,0,1588770339,,"PluginUpdate"
 :q!
 |2,0,1588770218,,"q!"
 :help jedi
@@ -49,8 +75,6 @@ $
 |2,0,1588769888,,"jedivim help"
 :.,$!1 2
 |2,0,1588769876,,".,$!1 2"
-:q
-|2,0,1588769867,,"q"
 :CtrlPBuffer
 |2,0,1588768770,,"CtrlPBuffer"
 :q:
@@ -93,32 +117,24 @@ $
 |2,0,1588754833,,"BundleUpdate"
 :Gstatus
 |2,0,1588754534,,"Gstatus"
-:b 3
-|2,0,1588753678,,"b 3"
-:ls
-|2,0,1588753671,,"ls"
-:cb 3
-|2,0,1588753664,,"cb 3"
-:cb 1
-|2,0,1588753644,,"cb 1"
-:cb 2
-|2,0,1588753641,,"cb 2"
-:ALEFix
-|2,0,1588753890,,"ALEFix"
-:ALEInfo
-|2,0,1588753850,,"ALEInfo"
-:CtrlP
-|2,0,1588753214,,"CtrlP"
-:wq
-|2,0,1588752433,,"wq"
-:yapf
-|2,0,1588709296,,"yapf"
-:ALEFixSuggest
-|2,0,1588709271,,"ALEFixSuggest"
-:ALEFix suggest
-|2,0,1588709265,,"ALEFix suggest"
 
 # Search String History (newest to oldest):
+? set
+|2,1,1588839345,,"set"
+? \<set\>
+|2,1,1588839340,,"\\<set\\>"
+?/git
+|2,1,1588838882,47,"git"
+?/vim-gitgutter
+|2,1,1588838748,47,"vim-gitgutter"
+?/vim
+|2,1,1588838293,47,"vim"
+?/gutter
+|2,1,1588838239,47,"gutter"
+?/main
+|2,1,1588837774,47,"main"
+??test
+|2,1,1588837504,63,"test"
 ??rain
 |2,1,1588771087,63,"rain"
 ??sour
@@ -186,7 +202,9 @@ $
 
 # Input Line History (newest to oldest):
 @y
-|2,3,1588770362,,"y"
+|2,3,1588838866,,"y"
+@ bt bt
+|2,3,1588774715,," bt bt"
 @/home/alex/projects/trade_master/backend/data/historic_data_api/data_transformation/fxt_file_creator/test.c
 |2,3,1588759916,,"/home/alex/projects/trade_master/backend/data/historic_data_api/data_transformation/fxt_file_creator/test.c"
 @Y
@@ -196,41 +214,41 @@ $
 
 # Registers:
 "0	CHAR	0
-	w"::uu::wjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkjhhhhhhhhh n n n njkhhhh n
-|3,0,0,0,1,0,1588769498,"w\"::uu::wjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkjhhhhhhhhh n n n njkhhhh n"
+	k
+|3,0,0,0,1,0,1588774501,"k"
 "1	LINE	0
-	" add toggle for dark and light mode
-|3,0,1,1,1,0,1588773650,"\" add toggle for dark and light mode"
+	Plugin 'airblade/vim-gitgutter'
+|3,0,1,1,1,0,1588838224,"Plugin 'airblade/vim-gitgutter'"
 "2	LINE	0
-	jkdd
-|3,0,2,1,1,0,1588773648,"jkdd"
+	
+|3,0,2,1,1,0,1588837688,""
 "3	LINE	0
-	"call togglebg#map("<F5>")
-|3,0,3,1,1,0,1588773645,"\"call togglebg#map(\"<F5>\")"
+	" ack search plugin
+|3,0,3,1,1,0,1588837688,"\" ack search plugin"
 "4	LINE	0
-	set RainbowToggle
-|3,0,4,1,1,0,1588770908,"set RainbowToggle"
+	Plugin 'mileszs/ack.vim'
+|3,0,4,1,1,0,1588837687,"Plugin 'mileszs/ack.vim'"
 "5	LINE	0
-	
-|3,0,5,1,1,0,1588760040,""
+	" add toggle for dark and light mode
+|3,0,5,1,1,0,1588773650,"\" add toggle for dark and light mode"
 "6	LINE	0
-	
-|3,0,6,1,1,0,1588760040,""
+	jkdd
+|3,0,6,1,1,0,1588773648,"jkdd"
 "7	LINE	0
-	
-|3,0,7,1,1,0,1588760039,""
+	"call togglebg#map("<F5>")
+|3,0,7,1,1,0,1588773645,"\"call togglebg#map(\"<F5>\")"
 "8	LINE	0
+	set RainbowToggle
+|3,0,8,1,1,0,1588770908,"set RainbowToggle"
+"9	LINE	0
 	
-|3,0,8,1,1,0,1588760039,""
-"9	CHAR	0
-	
-	" map close tab to ctrl + 2
-	nmap <leader>w :q<CR>
-	nmap <leader>W :q!<CR>
-|3,0,9,0,4,0,1588759069,"","\" map close tab to ctrl + 2","nmap <leader>w :q<CR>","nmap <leader>W :q!<CR>"
+|3,0,9,1,1,0,1588760040,""
 "j	CHAR	0
 	kjjjjjjjjjjjjjjjjjjj tjkj€kb€kbjkkjkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkk:jkjjjjjkjjkkjjj/nerdjjkjjjjjjjjoiset €kb€kb€kb€kb€kb€kbset€kb€kb€kbset modifiable:w
 |3,0,19,0,1,0,1588759894,"kjjjjjjjjjjjjjjjjjjj tjkj€kb€kbjkkjkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkk:jkjjjjjkjjkkjjj/nerdjjkjjjjjjjjoiset €kb€kb€kb€kb€kb€kbset€kb€kb€kbset modifiable:w"
+"k	CHAR	0
+	kkjj^i":w
+|3,0,20,0,1,0,1588838831,"kkjj^i\":w"
 "l	CHAR	0
 	\L
 |3,0,21,0,1,0,1588755300,"\\L"
@@ -239,345 +257,343 @@ $
 |3,0,26,0,1,0,1588755371,"?€kb€kb"
 ""-	CHAR	0
 	"
-|3,1,36,0,1,0,1588772800,"\""
+|3,1,36,0,1,0,1588838891,"\""
 
 # File marks:
-'0  5  0  ~/projects/playground/go/NERD_tree_1
-|4,48,5,0,1588773713,"~/projects/playground/go/NERD_tree_1"
-'1  185  20  ~/.vimrc
-|4,49,185,20,1588773701,"~/.vimrc"
-'2  159  0  ~/.vimrc
-|4,50,159,0,1588773610,"~/.vimrc"
-'3  159  0  ~/.vimrc
-|4,51,159,0,1588773610,"~/.vimrc"
-'4  1  0  ~/projects/playground/go/NERD_tree_1
-|4,52,1,0,1588773335,"~/projects/playground/go/NERD_tree_1"
-'5  5  0  ~/projects/playground/go/NERD_tree_1
-|4,53,5,0,1588773335,"~/projects/playground/go/NERD_tree_1"
-'6  88  8  ~/projects/prometheus/frontend-test/index.html
-|4,54,88,8,1588771352,"~/projects/prometheus/frontend-test/index.html"
-'7  88  8  ~/projects/prometheus/frontend-test/index.html
-|4,55,88,8,1588771352,"~/projects/prometheus/frontend-test/index.html"
-'8  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,56,11,0,1588771250,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
-'9  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,57,11,0,1588771250,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+'0  204  0  ~/.vimrc
+|4,48,204,0,1588840081,"~/.vimrc"
+'1  20  4  ~/.vimrc
+|4,49,20,4,1588838914,"~/.vimrc"
+'2  20  4  ~/.vimrc
+|4,50,20,4,1588838914,"~/.vimrc"
+'3  147  0  ~/.vimrc
+|4,51,147,0,1588838903,"~/.vimrc"
+'4  147  0  ~/.vimrc
+|4,52,147,0,1588838903,"~/.vimrc"
+'5  147  0  ~/.vimrc
+|4,53,147,0,1588838903,"~/.vimrc"
+'6  147  0  ~/.vimrc
+|4,54,147,0,1588838903,"~/.vimrc"
+'7  147  0  ~/.vimrc
+|4,55,147,0,1588838869,"~/.vimrc"
+'8  147  0  ~/.vimrc
+|4,56,147,0,1588838869,"~/.vimrc"
+'9  147  0  ~/.vimrc
+|4,57,147,0,1588838869,"~/.vimrc"
 
 # Jumplist (newest first):
--'  5  0  ~/projects/playground/go/NERD_tree_1
-|4,39,5,0,1588773713,"~/projects/playground/go/NERD_tree_1"
--'  185  20  ~/.vimrc
-|4,39,185,20,1588773701,"~/.vimrc"
+-'  204  0  ~/.vimrc
+|4,39,204,0,1588840081,"~/.vimrc"
+-'  190  0  ~/.vimrc
+|4,39,190,0,1588839351,"~/.vimrc"
+-'  189  0  ~/.vimrc
+|4,39,189,0,1588839351,"~/.vimrc"
+-'  188  0  ~/.vimrc
+|4,39,188,0,1588839350,"~/.vimrc"
+-'  150  1  ~/.vimrc
+|4,39,150,1,1588839350,"~/.vimrc"
+-'  123  0  ~/.vimrc
+|4,39,123,0,1588839350,"~/.vimrc"
+-'  38  0  ~/.vimrc
+|4,39,38,0,1588839350,"~/.vimrc"
+-'  37  2  ~/.vimrc
+|4,39,37,2,1588839350,"~/.vimrc"
+-'  35  0  ~/.vimrc
+|4,39,35,0,1588839349,"~/.vimrc"
+-'  9  0  ~/.vimrc
+|4,39,9,0,1588839345,"~/.vimrc"
+-'  8  0  ~/.vimrc
+|4,39,8,0,1588839340,"~/.vimrc"
 -'  1  0  ~/.vimrc
-|4,39,1,0,1588773629,"~/.vimrc"
--'  159  0  ~/.vimrc
-|4,39,159,0,1588773610,"~/.vimrc"
--'  159  0  ~/.vimrc
-|4,39,159,0,1588773610,"~/.vimrc"
+|4,39,1,0,1588839335,"~/.vimrc"
+-'  20  4  ~/.vimrc
+|4,39,20,4,1588838914,"~/.vimrc"
+-'  20  4  ~/.vimrc
+|4,39,20,4,1588838914,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1588838907,"~/.vimrc"
+-'  147  0  ~/.vimrc
+|4,39,147,0,1588838903,"~/.vimrc"
+-'  147  0  ~/.vimrc
+|4,39,147,0,1588838903,"~/.vimrc"
+-'  147  0  ~/.vimrc
+|4,39,147,0,1588838903,"~/.vimrc"
+-'  146  20  ~/.vimrc
+|4,39,146,20,1588838886,"~/.vimrc"
+-'  146  20  ~/.vimrc
+|4,39,146,20,1588838886,"~/.vimrc"
+-'  146  20  ~/.vimrc
+|4,39,146,20,1588838886,"~/.vimrc"
+-'  145  2  ~/.vimrc
+|4,39,145,2,1588838885,"~/.vimrc"
+-'  145  2  ~/.vimrc
+|4,39,145,2,1588838885,"~/.vimrc"
+-'  145  2  ~/.vimrc
+|4,39,145,2,1588838885,"~/.vimrc"
+-'  121  25  ~/.vimrc
+|4,39,121,25,1588838884,"~/.vimrc"
+-'  121  25  ~/.vimrc
+|4,39,121,25,1588838884,"~/.vimrc"
+-'  121  25  ~/.vimrc
+|4,39,121,25,1588838884,"~/.vimrc"
+-'  101  0  ~/.vimrc
+|4,39,101,0,1588838882,"~/.vimrc"
+-'  101  0  ~/.vimrc
+|4,39,101,0,1588838882,"~/.vimrc"
+-'  101  0  ~/.vimrc
+|4,39,101,0,1588838882,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1588838873,"~/.vimrc"
+-'  147  0  ~/.vimrc
+|4,39,147,0,1588838869,"~/.vimrc"
+-'  157  57  ~/.vimrc
+|4,39,157,57,1588838748,"~/.vimrc"
+-'  157  57  ~/.vimrc
+|4,39,157,57,1588838748,"~/.vimrc"
+-'  157  57  ~/.vimrc
+|4,39,157,57,1588838748,"~/.vimrc"
+-'  157  57  ~/.vimrc
+|4,39,157,57,1588838748,"~/.vimrc"
+-'  6  0  ~/projects/playground/go/NERD_tree_1
+|4,39,6,0,1588838656,"~/projects/playground/go/NERD_tree_1"
+-'  6  0  ~/projects/playground/go/NERD_tree_1
+|4,39,6,0,1588838656,"~/projects/playground/go/NERD_tree_1"
+-'  6  0  ~/projects/playground/go/NERD_tree_1
+|4,39,6,0,1588838656,"~/projects/playground/go/NERD_tree_1"
+-'  6  0  ~/projects/playground/go/NERD_tree_1
+|4,39,6,0,1588838656,"~/projects/playground/go/NERD_tree_1"
+-'  6  0  ~/projects/playground/go/NERD_tree_1
+|4,39,6,0,1588838656,"~/projects/playground/go/NERD_tree_1"
+-'  6  0  ~/projects/playground/go/NERD_tree_1
+|4,39,6,0,1588838656,"~/projects/playground/go/NERD_tree_1"
+-'  6  0  ~/projects/playground/go/NERD_tree_1
+|4,39,6,0,1588838656,"~/projects/playground/go/NERD_tree_1"
+-'  6  0  ~/projects/playground/go/NERD_tree_1
+|4,39,6,0,1588838656,"~/projects/playground/go/NERD_tree_1"
+-'  6  0  ~/projects/playground/go/NERD_tree_1
+|4,39,6,0,1588838656,"~/projects/playground/go/NERD_tree_1"
 -'  1  0  ~/projects/playground/go/NERD_tree_1
-|4,39,1,0,1588773415,"~/projects/playground/go/NERD_tree_1"
--'  5  0  ~/projects/playground/go/NERD_tree_1
-|4,39,5,0,1588773335,"~/projects/playground/go/NERD_tree_1"
--'  5  0  ~/projects/playground/go/NERD_tree_1
-|4,39,5,0,1588773335,"~/projects/playground/go/NERD_tree_1"
--'  1  0  ~/.vimrc
-|4,39,1,0,1588772946,"~/.vimrc"
+|4,39,1,0,1588838622,"~/projects/playground/go/NERD_tree_1"
 -'  1  0  ~/projects/playground/go/NERD_tree_1
-|4,39,1,0,1588772878,"~/projects/playground/go/NERD_tree_1"
+|4,39,1,0,1588838622,"~/projects/playground/go/NERD_tree_1"
 -'  1  0  ~/projects/playground/go/NERD_tree_1
-|4,39,1,0,1588772878,"~/projects/playground/go/NERD_tree_1"
--'  88  8  ~/projects/prometheus/frontend-test/index.html
-|4,39,88,8,1588771352,"~/projects/prometheus/frontend-test/index.html"
--'  88  8  ~/projects/prometheus/frontend-test/index.html
-|4,39,88,8,1588771352,"~/projects/prometheus/frontend-test/index.html"
--'  88  8  ~/projects/prometheus/frontend-test/index.html
-|4,39,88,8,1588771352,"~/projects/prometheus/frontend-test/index.html"
--'  88  8  ~/projects/prometheus/frontend-test/index.html
-|4,39,88,8,1588771352,"~/projects/prometheus/frontend-test/index.html"
--'  87  12  ~/projects/prometheus/frontend-test/index.html
-|4,39,87,12,1588771270,"~/projects/prometheus/frontend-test/index.html"
--'  87  12  ~/projects/prometheus/frontend-test/index.html
-|4,39,87,12,1588771270,"~/projects/prometheus/frontend-test/index.html"
--'  87  12  ~/projects/prometheus/frontend-test/index.html
-|4,39,87,12,1588771270,"~/projects/prometheus/frontend-test/index.html"
--'  87  12  ~/projects/prometheus/frontend-test/index.html
-|4,39,87,12,1588771270,"~/projects/prometheus/frontend-test/index.html"
--'  90  0  ~/projects/prometheus/frontend-test/index.html
-|4,39,90,0,1588771266,"~/projects/prometheus/frontend-test/index.html"
--'  23  0  ~/projects/prometheus/frontend-test/index.html
-|4,39,23,0,1588771266,"~/projects/prometheus/frontend-test/index.html"
--'  90  0  ~/projects/prometheus/frontend-test/index.html
-|4,39,90,0,1588771266,"~/projects/prometheus/frontend-test/index.html"
--'  23  0  ~/projects/prometheus/frontend-test/index.html
-|4,39,23,0,1588771266,"~/projects/prometheus/frontend-test/index.html"
--'  90  0  ~/projects/prometheus/frontend-test/index.html
-|4,39,90,0,1588771266,"~/projects/prometheus/frontend-test/index.html"
--'  23  0  ~/projects/prometheus/frontend-test/index.html
-|4,39,23,0,1588771266,"~/projects/prometheus/frontend-test/index.html"
--'  90  0  ~/projects/prometheus/frontend-test/index.html
-|4,39,90,0,1588771266,"~/projects/prometheus/frontend-test/index.html"
--'  23  0  ~/projects/prometheus/frontend-test/index.html
-|4,39,23,0,1588771266,"~/projects/prometheus/frontend-test/index.html"
--'  1  0  ~/projects/prometheus/frontend-test/index.html
-|4,39,1,0,1588771263,"~/projects/prometheus/frontend-test/index.html"
--'  1  0  ~/projects/prometheus/frontend-test/index.html
-|4,39,1,0,1588771263,"~/projects/prometheus/frontend-test/index.html"
--'  1  0  ~/projects/prometheus/frontend-test/index.html
-|4,39,1,0,1588771263,"~/projects/prometheus/frontend-test/index.html"
--'  1  0  ~/projects/prometheus/frontend-test/index.html
-|4,39,1,0,1588771263,"~/projects/prometheus/frontend-test/index.html"
--'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,11,0,1588771250,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,11,0,1588771250,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,11,0,1588771250,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,11,0,1588771250,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,11,0,1588771250,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,11,0,1588771250,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,11,0,1588771250,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,11,0,1588771250,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  70  5  ~/.vimrc
-|4,39,70,5,1588771245,"~/.vimrc"
--'  70  5  ~/.vimrc
-|4,39,70,5,1588771245,"~/.vimrc"
--'  70  5  ~/.vimrc
-|4,39,70,5,1588771245,"~/.vimrc"
--'  70  5  ~/.vimrc
-|4,39,70,5,1588771245,"~/.vimrc"
--'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,19,2,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,1,0,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,19,2,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,1,0,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,19,2,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,1,0,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,19,2,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,1,0,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,19,2,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,1,0,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,19,2,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,1,0,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,19,2,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,1,0,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,19,2,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,1,0,1588771119,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,11,0,1588771103,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,11,0,1588771103,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,11,0,1588771103,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,11,0,1588771103,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,11,0,1588771103,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,11,0,1588771103,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,11,0,1588771103,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  11  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,11,0,1588771103,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  1  0  ~/.vimrc
-|4,39,1,0,1588771087,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1588771087,"~/.vimrc"
--'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,19,2,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,1,0,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,19,2,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,1,0,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,19,2,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,1,0,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,19,2,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,1,0,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,19,2,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,1,0,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,19,2,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,1,0,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,19,2,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,1,0,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  19  2  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,19,2,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  1  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,1,0,1588771074,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  70  26  ~/.vimrc
-|4,39,70,26,1588771043,"~/.vimrc"
--'  70  26  ~/.vimrc
-|4,39,70,26,1588771043,"~/.vimrc"
--'  29  0  ~/.vimrc
-|4,39,29,0,1588771027,"~/.vimrc"
--'  29  0  ~/.vimrc
-|4,39,29,0,1588771027,"~/.vimrc"
--'  29  0  ~/.vimrc
-|4,39,29,0,1588771027,"~/.vimrc"
--'  29  0  ~/.vimrc
-|4,39,29,0,1588771027,"~/.vimrc"
--'  29  0  ~/.vimrc
-|4,39,29,0,1588771027,"~/.vimrc"
--'  29  0  ~/.vimrc
-|4,39,29,0,1588771027,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1588771021,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1588771021,"~/.vimrc"
--'  17  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,17,0,1588771004,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  18  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,18,0,1588771004,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  18  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,18,0,1588771004,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  17  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,17,0,1588771004,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
--'  18  0  ~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1
-|4,39,18,0,1588771004,"~/projects/trade_master/backend/data/historic_data_api/NERD_tree_1"
+|4,39,1,0,1588838622,"~/projects/playground/go/NERD_tree_1"
+-'  1  0  ~/projects/playground/go/NERD_tree_1
+|4,39,1,0,1588838622,"~/projects/playground/go/NERD_tree_1"
+-'  1  0  ~/projects/playground/go/NERD_tree_1
+|4,39,1,0,1588838622,"~/projects/playground/go/NERD_tree_1"
+-'  1  0  ~/projects/playground/go/NERD_tree_1
+|4,39,1,0,1588838622,"~/projects/playground/go/NERD_tree_1"
+-'  1  0  ~/projects/playground/go/NERD_tree_1
+|4,39,1,0,1588838622,"~/projects/playground/go/NERD_tree_1"
+-'  1  0  ~/projects/playground/go/NERD_tree_1
+|4,39,1,0,1588838622,"~/projects/playground/go/NERD_tree_1"
+-'  1  0  ~/projects/playground/go/NERD_tree_1
+|4,39,1,0,1588838622,"~/projects/playground/go/NERD_tree_1"
+-'  139  23  ~/.vimrc
+|4,39,139,23,1588838316,"~/.vimrc"
+-'  139  23  ~/.vimrc
+|4,39,139,23,1588838316,"~/.vimrc"
+-'  139  23  ~/.vimrc
+|4,39,139,23,1588838316,"~/.vimrc"
+-'  146  14  ~/.vimrc
+|4,39,146,14,1588838316,"~/.vimrc"
+-'  139  23  ~/.vimrc
+|4,39,139,23,1588838316,"~/.vimrc"
+-'  133  8  ~/.vimrc
+|4,39,133,8,1588838315,"~/.vimrc"
+-'  133  8  ~/.vimrc
+|4,39,133,8,1588838315,"~/.vimrc"
+-'  133  8  ~/.vimrc
+|4,39,133,8,1588838315,"~/.vimrc"
+-'  133  8  ~/.vimrc
+|4,39,133,8,1588838315,"~/.vimrc"
+-'  129  25  ~/.vimrc
+|4,39,129,25,1588838314,"~/.vimrc"
+-'  120  14  ~/.vimrc
+|4,39,120,14,1588838314,"~/.vimrc"
+-'  129  25  ~/.vimrc
+|4,39,129,25,1588838314,"~/.vimrc"
+-'  120  14  ~/.vimrc
+|4,39,120,14,1588838314,"~/.vimrc"
+-'  129  25  ~/.vimrc
+|4,39,129,25,1588838314,"~/.vimrc"
+-'  120  14  ~/.vimrc
+|4,39,120,14,1588838314,"~/.vimrc"
+-'  129  25  ~/.vimrc
+|4,39,129,25,1588838314,"~/.vimrc"
+-'  120  14  ~/.vimrc
+|4,39,120,14,1588838314,"~/.vimrc"
+-'  116  20  ~/.vimrc
+|4,39,116,20,1588838313,"~/.vimrc"
+-'  112  14  ~/.vimrc
+|4,39,112,14,1588838313,"~/.vimrc"
+-'  116  20  ~/.vimrc
+|4,39,116,20,1588838313,"~/.vimrc"
+-'  112  14  ~/.vimrc
+|4,39,112,14,1588838313,"~/.vimrc"
+-'  116  20  ~/.vimrc
+|4,39,116,20,1588838313,"~/.vimrc"
+-'  112  14  ~/.vimrc
+|4,39,112,14,1588838313,"~/.vimrc"
+-'  116  20  ~/.vimrc
+|4,39,116,20,1588838313,"~/.vimrc"
+-'  112  14  ~/.vimrc
+|4,39,112,14,1588838313,"~/.vimrc"
+-'  99  40  ~/.vimrc
+|4,39,99,40,1588838312,"~/.vimrc"
+-'  99  40  ~/.vimrc
+|4,39,99,40,1588838312,"~/.vimrc"
+-'  99  40  ~/.vimrc
+|4,39,99,40,1588838312,"~/.vimrc"
+-'  99  40  ~/.vimrc
+|4,39,99,40,1588838312,"~/.vimrc"
+-'  98  4  ~/.vimrc
+|4,39,98,4,1588838311,"~/.vimrc"
+-'  98  4  ~/.vimrc
+|4,39,98,4,1588838311,"~/.vimrc"
+-'  98  4  ~/.vimrc
+|4,39,98,4,1588838311,"~/.vimrc"
+-'  98  4  ~/.vimrc
+|4,39,98,4,1588838311,"~/.vimrc"
+-'  70  15  ~/.vimrc
+|4,39,70,15,1588838310,"~/.vimrc"
+-'  69  13  ~/.vimrc
+|4,39,69,13,1588838310,"~/.vimrc"
+-'  70  15  ~/.vimrc
+|4,39,70,15,1588838310,"~/.vimrc"
+-'  69  13  ~/.vimrc
+|4,39,69,13,1588838310,"~/.vimrc"
+-'  70  15  ~/.vimrc
+|4,39,70,15,1588838310,"~/.vimrc"
+-'  69  13  ~/.vimrc
+|4,39,69,13,1588838310,"~/.vimrc"
+-'  70  15  ~/.vimrc
+|4,39,70,15,1588838310,"~/.vimrc"
+-'  69  13  ~/.vimrc
+|4,39,69,13,1588838310,"~/.vimrc"
+-'  66  8  ~/.vimrc
+|4,39,66,8,1588838309,"~/.vimrc"
+-'  66  8  ~/.vimrc
+|4,39,66,8,1588838309,"~/.vimrc"
+-'  66  8  ~/.vimrc
+|4,39,66,8,1588838309,"~/.vimrc"
+-'  66  8  ~/.vimrc
+|4,39,66,8,1588838309,"~/.vimrc"
+-'  58  32  ~/.vimrc
+|4,39,58,32,1588838307,"~/.vimrc"
 
 # History of marks within files (newest to oldest):
 
 > ~/.vimrc
-	*	1588773697	0
-	"	185	20
-	^	185	21
-	.	185	19
-	+	8	0
-	+	9	0
-	+	185	31
-	+	185	1
-	+	130	15
-	+	135	0
-	+	131	28
-	+	133	35
-	+	134	32
-	+	132	24
-	+	22	24
-	+	65	28
-	+	64	28
-	+	68	26
-	+	103	32
+	*	1588839380	0
+	"	204	0
+	^	147	1
+	.	147	0
+	+	57	0
+	+	59	0
+	+	58	27
 	+	63	0
-	+	62	26
-	+	43	26
-	+	48	0
-	+	50	0
-	+	49	27
-	+	54	0
-	+	52	34
-	+	50	34
-	+	54	33
-	+	54	0
-	+	32	0
-	+	46	0
+	+	61	34
+	+	59	34
+	+	63	33
+	+	63	0
+	+	41	0
+	+	55	0
 	+	18	51
-	+	21	0
+	+	23	0
 	+	18	0
-	+	21	0
+	+	23	0
 	+	18	0
 	+	20	1
 	+	18	10
-	+	206	44
-	+	206	66
-	+	206	87
-	+	206	108
-	+	206	0
+	+	219	44
+	+	219	66
+	+	219	87
+	+	219	108
+	+	219	0
 	+	18	15
 	+	18	16
-	+	61	49
-	+	22	24
-	+	103	0
-	+	68	4
-	+	68	22
-	+	98	4
-	+	98	8
-	+	103	0
+	+	70	49
+	+	24	24
+	+	112	0
+	+	77	4
+	+	77	22
+	+	107	4
+	+	107	8
+	+	112	0
+	+	111	0
+	+	110	0
+	+	107	7
+	+	109	0
+	+	79	4
+	+	107	3
+	+	107	2
+	+	90	0
+	+	79	4
+	+	107	1
+	+	89	63
+	+	92	0
+	+	92	85
+	+	95	110
+	+	98	53
 	+	102	0
-	+	101	0
-	+	98	7
-	+	100	0
-	+	70	4
-	+	98	3
-	+	98	2
-	+	81	0
-	+	70	4
-	+	98	1
-	+	80	63
-	+	83	0
-	+	83	85
-	+	86	110
-	+	89	53
-	+	93	0
-	+	92	46
-	+	95	70
-	+	97	12
-	+	54	5
-	+	54	0
+	+	101	46
+	+	104	70
+	+	106	12
+	+	63	5
+	+	63	0
 	+	18	11
-	+	54	0
+	+	63	0
 	+	18	0
-	+	19	7
+	+	20	8
 	+	18	0
-	+	19	7
+	+	20	8
 	+	18	12
 	+	12	8
 	+	18	0
 	+	15	7
-	+	19	0
-	+	23	0
-	+	27	0
-	+	23	7
-	+	112	34
-	+	114	13
-	+	48	0
-	+	50	0
-	+	51	0
-	+	53	0
-	+	49	0
-	+	46	31
-	+	70	3
-	+	70	2
-	+	70	1
-	+	72	0
-	+	70	5
-	+	185	1
-	+	185	19
+	+	20	1
+	+	25	0
+	+	29	0
+	+	25	7
+	+	121	34
+	+	123	13
+	+	57	0
+	+	59	0
+	+	60	0
+	+	62	0
+	+	58	0
+	+	55	31
+	+	79	3
+	+	79	2
+	+	79	1
+	+	81	0
+	+	79	5
+	+	195	1
+	+	195	19
+	+	197	24
+	+	199	0
+	+	198	0
+	+	31	0
+	+	31	19
+	+	32	19
+	+	32	22
+	+	204	2
+	+	204	1
+	+	204	0
+	+	21	0
+	+	20	11
+	+	147	29
+	+	35	1
+	+	36	0
+	+	35	17
+	+	147	0
 
 > ~/projects/playground/go/test.go
-	*	1588773415	0
-	"	11	0
-	^	7	7
-	.	7	6
+	*	1588838656	0
+	"	5	5
+	.	1	0
 	+	14	0
 	+	8	1
 	+	6	1
@@ -585,18 +601,60 @@ $
 	+	3	0
 	+	11	0
 	+	7	6
-
-> ~/projects/playground/go/__Tagbar__.1
-	*	1588773407	0
-	"	8	4
-	.	9	0
-	+	9	0
+	+	1	12
+	+	1	0
 
 > ~/projects/playground/go/NERD_tree_1
-	*	1588773339	0
-	"	5	0
+	*	1588837770	0
+	"	6	0
 	.	1	0
 	+	1	0
+
+> ~/projects/playground/go/Makefile
+	*	1588837766	0
+	"	2	14
+	^	2	8
+	.	2	7
+	+	2	7
+	a	2	1
+
+> ~/projects/playground/go/Ma
+	*	1588775065	0
+	"	1	0
+
+> ~/projects/playground/go/[BufExplorer]
+	*	1588775058	0
+	"	1	0
+
+> /usr/share/go-1.13/src/fmt/print.go
+	*	1588774931	0
+	"	273	5
+
+> ~/projects/playground/go/make: *** [Makefile
+	*	1588774838	0
+	"	1	0
+
+> ~/projects/playground/go/ControlP
+	*	1588774509	0
+	"	10	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> ~/[BufExplorer]
+	*	1588774051	0
+	"	1	0
+
+> ~/.vimr
+	*	1588773956	0
+	"	1	0
+
+> ~/projects/playground/go/__Tagbar__.1
+	*	1588773735	0
+	"	8	4
+	.	9	0
+	+	15	0
+	+	9	0
 
 > ~/.vim/bundle/tagbar/doc/tagbar.txt
 	*	1588773335	0
@@ -839,10 +897,6 @@ $
 
 > /home/.bashrc
 	*	1588693145	0
-	"	1	0
-
-> ~/.vimr
-	*	1588692449	0
 	"	1	0
 
 > /etc/apt/sources.list
