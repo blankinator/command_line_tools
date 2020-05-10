@@ -1,6 +1,9 @@
 HowTo:
 - install nox-vim
-- clone repo
+- clone repo into home directory 
+  git init
+  git remote add origin git@github.com:blankinator/command_line_tools.git
+  git pull origin master
 - clone vundle (https://github.com/VundleVim/Vundle.vim) into .vim/bundle
 - run :PluginInstall
 - install requirements
