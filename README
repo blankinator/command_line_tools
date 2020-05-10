@@ -1,0 +1,8 @@
+HowTo:
+- install nox-vim
+- clone repo
+- clone vundle (https://github.com/VundleVim/Vundle.vim) into .vim/bundle
+- run :PluginInstall
+- install requirements
+  (sudo apt-get install cmake build-essential python3-dev olang openjdk-8-jre npm exuberant-ctags
+- compile YouCompleteMe -> go into .vim/bundle/YouCompleteMe and run "python install.py -all"
