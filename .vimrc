@@ -19,6 +19,9 @@ set t_Co=256
 " enable search highlighting
 set hlsearch
 
+" paste multiple times
+xnoremap p pgvy
+
 " close tab with ctr + w
 map" set the leader key to space
 let mapleader = "\<Space>"
