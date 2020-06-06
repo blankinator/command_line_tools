@@ -64,6 +64,11 @@ Bundle 'Valloric/YouCompleteMe'
 " automatically select the first line in the popup for better flow
 "let g:jedi#popup_select_first = 0
 
+" terraform plugin
+Plugin 'hashivim/vim-terraform'
+let g:terraform_aling=1
+let g:terraform_fold_sections=1
+let g:terraform_fmt_on_save=1
 
 " python syntax checking
 Plugin 'vim-syntastic/syntastic'
