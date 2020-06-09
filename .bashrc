@@ -134,3 +134,9 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/alex/Downloads/google-cloud-sdk/path.bash.inc' ]; then . '/home/alex/Downloads/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/alex/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/home/alex/Downloads/google-cloud-sdk/completion.bash.inc'; fi

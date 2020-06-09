@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/setV
+~MSle0~/utf
 
 # Last Substitute Search Pattern:
 ~MSle0&finished_game
@@ -21,7 +21,21 @@ $FINISHED_GAME
 
 # Command Line History (newest to oldest):
 :w
-|2,0,1589038522,,"w"
+|2,0,1591448586,,"w"
+:source ~/.vimrc
+|2,0,1591448684,,"source ~/.vimrc"
+:BundleInstall
+|2,0,1591448542,,"BundleInstall"
+:Plugininstall
+|2,0,1591448538,,"Plugininstall"
+:source .
+|2,0,1591448468,,"source ."
+:wq
+|2,0,1591448418,,"wq"
+:q
+|2,0,1590934490,,"q"
+: w
+|2,0,1590923106,," w"
 :make
 |2,0,1588949970,,"make"
 :bd 4
@@ -36,8 +50,6 @@ $FINISHED_GAME
 |2,0,1588948861,,"RefactorRename FINISHED_GAme"
 :PluginList
 |2,0,1588946405,,"PluginList"
-:q
-|2,0,1588946344,,"q"
 :line 33
 |2,0,1588946063,,"line 33"
 :cb 3
@@ -46,8 +58,6 @@ $FINISHED_GAME
 |2,0,1588945932,,"cb 2"
 :! touch Makefile
 |2,0,1588945422,,"! touch Makefile"
-:wq
-|2,0,1588945683,,"wq"
 :source .vimrc
 |2,0,1588838912,,"source .vimrc"
 :PluginInstall
@@ -86,8 +96,6 @@ $FINISHED_GAME
 |2,0,1588771069,,"RainbowToggle"
 :YcmRestartServer
 |2,0,1588770411,,"YcmRestartServer"
-: w
-|2,0,1588770366,," w"
 :q!
 |2,0,1588770218,,"q!"
 :help jedi
@@ -112,16 +120,22 @@ $FINISHED_GAME
 |2,0,1588757933,,"Autopep8"
 :call Autopep8()
 |2,0,1588757887,,"call Autopep8()"
-:autopep8()
-|2,0,1588757863,,"autopep8()"
-:W
-|2,0,1588758737,,"W"
-:help flake8
-|2,0,1588757995,,"help flake8"
-:BundleInstall
-|2,0,1588757898,,"BundleInstall"
 
 # Search String History (newest to oldest):
+?/terr
+|2,1,1591448630,47,"terr"
+?// Terraform plugin for creating random ids
+|2,1,1591440952,47,"/ Terraform plugin for creating random ids"
+?/utf
+|2,1,1590934721,47,"utf"
+??window
+|2,1,1590930818,63,"window"
+?/window
+|2,1,1590930813,47,"window"
+? \<folder\>
+|2,1,1590858509,,"\\<folder\\>"
+? \<the\>
+|2,1,1590858488,,"\\<the\\>"
 ??setV
 |2,1,1589038579,63,"setV"
 ? \<index\>
@@ -208,12 +222,6 @@ $FINISHED_GAME
 |2,1,1588681222,47,"g create"
 ? @$
 |2,1,1588676197,,"@$"
-??\a
-|2,1,1588676169,63,"\\a"
-? \<python3\>
-|2,1,1588675751,,"\\<python3\\>"
-? \<bind\>
-|2,1,1587652081,,"\\<bind\\>"
 
 # Expression History (newest to oldest):
 
@@ -231,281 +239,885 @@ $FINISHED_GAME
 
 # Registers:
 "0	CHAR	0
-	get_index(x_row, x_col - 1)
-|3,0,0,0,1,0,1588949934,"get_index(x_row, x_col - 1)"
-"1	CHAR	0
-	index)
-	    x_col = 
-|3,0,1,0,2,0,1588949453,"index)","    x_col = "
+	images_found=$(ls | grep jpg | wc -l)
+		images_to_download=$(($num_of_images-$images_found))
+|3,0,0,0,2,0,1590932239,"images_found=$(ls | grep jpg | wc -l)","	images_to_download=$(($num_of_images-$images_found))"
+""1	LINE	0
+	resource "random_id" "instance_id" {
+	 byte_length = 8
+	
+	}
+	
+	// A single Google Cloud Engine instance
+	resource "google_compute_instance" "default" {
+	 name         = "flask-vm-${random_id.instance_id.hex}"
+	 machine_type = "f1-micro"
+	 zone         = "us-west1-a"
+	
+	boot_disk {
+	initialize_params {
+	     image = "debian-cloud/debian-9"
+	   
+	}
+	 
+	}
+	
+	// Make sure flask is installed on all new instances for later steps
+	 metadata_startup_script = "sudo apt-get update; sudo apt-get install -yq build-essential python-pip rsync; pip install flask"
+	
+	network_interface {
+	   network = "default"
+	
+	access_config {
+	     // Include this section to give the VM an external ip address
+	   
+	}
+	 
+	}
+	
+	}
+|3,1,1,1,33,0,1591448275,"resource \"random_id\" \"instance_id\" {"," byte_length = 8","","}","","// A single Google Cloud Engine instance","resource \"google_compute_instance\" \"default\" {"," name         = \"flask-vm-${random_id.instance_id.hex}\""," machine_type = \"f1-micro\""," zone         = \"us-west1-a\"","","boot_disk {","initialize_params {","     image = \"debian-cloud/debian-9\"","   ","}"," ","}","",>70
+|<"// Make sure flask is installed on all new instances for later steps"," metadata_startup_script = \"sudo apt-get update; sudo apt-get install -yq build-essential python-pip rsync; pip install flask\"","","network_interface {","   network = \"default\"","","access_config {","     // Include this section to give the VM an external ip address","   ","}"," ","}","","}"
 "2	LINE	0
-	c
-|3,0,2,1,1,0,1588949399,"c"
+	env_setup.sh
+|3,0,2,1,1,0,1591443645,"env_setup.sh"
 "3	LINE	0
+	d
+|3,0,3,1,1,0,1591443644,"d"
+"4	CHAR	0
+	resource "random_id" "instance_id" {
+		byte_length = 8
+	}
 	
-|3,0,3,1,1,0,1588948961,""
-"4	LINE	0
 	
-|3,0,4,1,1,0,1588948961,""
-"5	LINE	0
-	          :
-|3,0,5,1,1,0,1588946034,"          :"
-"6	CHAR	0
-	False
+|3,0,4,0,5,0,1591440947,"resource \"random_id\" \"instance_id\" {","	byte_length = 8","}","",""
+"5	CHAR	0
+	resource "google_compute_instance" "default" {
+		name = "flask-vm-${random_id.instance_id.hex}"
+		machine_type = "f1.micro"
+		zone = "us-west1-a"
+			
+		boot_disk {
+			initialize_params {
+				image = "debian-cloud/debian-9"
+			}
+		}
 	
-|3,0,6,0,2,0,1588945735,"False",""
-"7	CHAR	0
-	False
+		// Make sure flask is installed on all new instances for later steps
+		 metadata_startup_script = "sudo apt-get update; sudo apt-get install -yq build-essential python-pip rsync; pip install flask"
 	
-|3,0,7,0,2,0,1588945733,"False",""
-"8	CHAR	0
-	False
+		network_interface {
+			   network = "default"
 	
-|3,0,8,0,2,0,1588945616,"False",""
-"9	CHAR	0
-	False
+			access_config {
+			     // Include this section to give the VM an external ip address
+			   
+			}
+		 
+		}
+	}
 	
-|3,0,9,0,2,0,1588945611,"False",""
+|3,0,5,0,25,0,1591440940,"resource \"google_compute_instance\" \"default\" {","	name = \"flask-vm-${random_id.instance_id.hex}\"","	machine_type = \"f1.micro\"","	zone = \"us-west1-a\"","		","	boot_disk {","		initialize_params {","			image = \"debian-cloud/debian-9\"","		}","	}","","	// Make sure flask is installed on all new instances for later steps",>131
+|<"	 metadata_startup_script = \"sudo apt-get update; sudo apt-get install -yq build-essential python-pip rsync; pip install flask\"","","	network_interface {","		   network = \"default\"","","		access_config {","		     // Include this section to give the VM an external ip address","		   ","		}","	 ","	}","}",""
+"6	LINE	0
+	
+|3,0,6,1,1,0,1591440593,""
+"7	LINE	0
+	
+|3,0,7,1,1,0,1591440482,""
+"8	LINE	0
+	
+|3,0,8,1,1,0,1591439721,""
+"9	LINE	0
+	echo schniedel
+|3,0,9,1,1,0,1591439721,"echo schniedel"
 "j	CHAR	0
 	kjjjjjjjjjjjjjjjjjjj tjkj€kb€kbjkkjkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkk:jkjjjjjkjjkkjjj/nerdjjkjjjjjjjjoiset €kb€kb€kb€kb€kb€kbset€kb€kb€kbset modifiable:w
 |3,0,19,0,1,0,1588759894,"kjjjjjjjjjjjjjjjjjjj tjkj€kb€kbjkkjkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkk:jkjjjjjkjjkkjjj/nerdjjkjjjjjjjjoiset €kb€kb€kb€kb€kb€kbset€kb€kb€kbset modifiable:w"
 "k	CHAR	0
-	kkjj^i":w
-|3,0,20,0,1,0,1588838831,"kkjj^i\":w"
+	j	
+|3,0,20,0,1,0,1590920881,"j	"
 "l	CHAR	0
 	\L
 |3,0,21,0,1,0,1588755300,"\\L"
 "q	CHAR	0
 	?€kb€kb
 |3,0,26,0,1,0,1588755371,"?€kb€kb"
-""-	CHAR	0
-	i
-|3,1,36,0,1,0,1589038523,"i"
+"-	CHAR	0
+	europe
+|3,0,36,0,1,0,1591447151,"europe"
 
 # File marks:
-'0  90  6  ~/projects/prometheus/frontend-test/index.html
-|4,48,90,6,1589176771,"~/projects/prometheus/frontend-test/index.html"
-'1  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,49,1,0,1589038536,"~/projects/playground/python/push_game/push_game.py"
-'2  1  0  ~/projects/playground/python/push_game/NERD_tree_1
-|4,50,1,0,1588949063,"~/projects/playground/python/push_game/NERD_tree_1"
-'3  9  0  ~/projects/playground/python/push_game/NERD_tree_1
-|4,51,9,0,1588949063,"~/projects/playground/python/push_game/NERD_tree_1"
-'4  1  0  ~/projects/playground/python/push_game/NERD_tree_1
-|4,52,1,0,1588945755,"~/projects/playground/python/push_game/NERD_tree_1"
-'5  1  0  ~/projects/playground/python/push_game/NERD_tree_1
-|4,53,1,0,1588945755,"~/projects/playground/python/push_game/NERD_tree_1"
-'6  1  0  ~/projects/playground/python/push_game/NERD_tree_1
-|4,54,1,0,1588945755,"~/projects/playground/python/push_game/NERD_tree_1"
-'7  10  0  ~/projects/playground/python/push_game/NERD_tree_1
-|4,55,10,0,1588945755,"~/projects/playground/python/push_game/NERD_tree_1"
-'8  1  0  ~/projects/playground/python/push_game/NERD_tree_1
-|4,56,1,0,1588945689,"~/projects/playground/python/push_game/NERD_tree_1"
-'9  1  0  ~/projects/playground/python/push_game/NERD_tree_1
-|4,57,1,0,1588945689,"~/projects/playground/python/push_game/NERD_tree_1"
+'0  23  0  ~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf
+|4,48,23,0,1591448693,"~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf"
+'1  71  28  ~/.vimrc
+|4,49,71,28,1591448687,"~/.vimrc"
+'2  68  30  ~/.vimrc
+|4,50,68,30,1591448546,"~/.vimrc"
+'3  68  30  ~/.vimrc
+|4,51,68,30,1591448546,"~/.vimrc"
+'4  21  0  ~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf
+|4,52,21,0,1591448418,"~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf"
+'5  21  0  ~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf
+|4,53,21,0,1591448418,"~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf"
+'6  1  0  ~/projects/prometheus/cloud_setup/terraform.tf
+|4,54,1,0,1591448265,"~/projects/prometheus/cloud_setup/terraform.tf"
+'7  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,55,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+'8  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,56,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+'9  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,57,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
 
 # Jumplist (newest first):
--'  90  6  ~/projects/prometheus/frontend-test/index.html
-|4,39,90,6,1589176771,"~/projects/prometheus/frontend-test/index.html"
--'  31  36  ~/projects/prometheus/frontend-test/index.html
-|4,39,31,36,1589038584,"~/projects/prometheus/frontend-test/index.html"
--'  74  16  ~/projects/prometheus/frontend-test/index.html
-|4,39,74,16,1589038580,"~/projects/prometheus/frontend-test/index.html"
--'  1  0  ~/projects/prometheus/frontend-test/index.html
-|4,39,1,0,1589038556,"~/projects/prometheus/frontend-test/index.html"
--'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1589038536,"~/projects/playground/python/push_game/push_game.py"
--'  1  0  ~/projects/playground/python/push_game/push_game.py
-|4,39,1,0,1589038536,"~/projects/playground/python/push_game/push_game.py"
--'  10  2  ~/projects/playground/python/push_game/NERD_tree_1
-|4,39,10,2,1589038526,"~/projects/playground/python/push_game/NERD_tree_1"
--'  10  2  ~/projects/playground/python/push_game/NERD_tree_1
-|4,39,10,2,1589038526,"~/projects/playground/python/push_game/NERD_tree_1"
--'  1  2  ~/projects/playground/python/push_game/NERD_tree_1
-|4,39,1,2,1589038523,"~/projects/playground/python/push_game/NERD_tree_1"
--'  1  2  ~/projects/playground/python/push_game/NERD_tree_1
-|4,39,1,2,1589038523,"~/projects/playground/python/push_game/NERD_tree_1"
--'  9  0  ~/projects/playground/python/push_game/NERD_tree_1
-|4,39,9,0,1588949063,"~/projects/playground/python/push_game/NERD_tree_1"
--'  9  0  ~/projects/playground/python/push_game/NERD_tree_1
-|4,39,9,0,1588949063,"~/projects/playground/python/push_game/NERD_tree_1"
--'  10  2  ~/projects/playground/python/push_game/NERD_tree_1
-|4,39,10,2,1588949026,"~/projects/playground/python/push_game/NERD_tree_1"
--'  1  0  ~/projects/playground/python/push_game/NERD_tree_1
-|4,39,1,0,1588949026,"~/projects/playground/python/push_game/NERD_tree_1"
--'  10  2  ~/projects/playground/python/push_game/NERD_tree_1
-|4,39,10,2,1588949026,"~/projects/playground/python/push_game/NERD_tree_1"
--'  1  0  ~/projects/playground/python/push_game/NERD_tree_1
-|4,39,1,0,1588949026,"~/projects/playground/python/push_game/NERD_tree_1"
--'  10  0  ~/projects/playground/python/push_game/NERD_tree_1
-|4,39,10,0,1588945755,"~/projects/playground/python/push_game/NERD_tree_1"
--'  10  0  ~/projects/playground/python/push_game/NERD_tree_1
-|4,39,10,0,1588945755,"~/projects/playground/python/push_game/NERD_tree_1"
--'  1  0  ~/projects/playground/python/push_game/NERD_tree_1
-|4,39,1,0,1588945740,"~/projects/playground/python/push_game/NERD_tree_1"
--'  1  0  ~/projects/playground/python/push_game/NERD_tree_1
-|4,39,1,0,1588945740,"~/projects/playground/python/push_game/NERD_tree_1"
--'  9  0  ~/projects/playground/python/push_game/NERD_tree_1
-|4,39,9,0,1588945689,"~/projects/playground/python/push_game/NERD_tree_1"
--'  9  0  ~/projects/playground/python/push_game/NERD_tree_1
-|4,39,9,0,1588945689,"~/projects/playground/python/push_game/NERD_tree_1"
--'  11  2  ~/projects/playground/python/push_game/NERD_tree_1
-|4,39,11,2,1588945687,"~/projects/playground/python/push_game/NERD_tree_1"
--'  1  0  ~/projects/playground/python/push_game/NERD_tree_1
-|4,39,1,0,1588945687,"~/projects/playground/python/push_game/NERD_tree_1"
--'  11  2  ~/projects/playground/python/push_game/NERD_tree_1
-|4,39,11,2,1588945687,"~/projects/playground/python/push_game/NERD_tree_1"
--'  1  0  ~/projects/playground/python/push_game/NERD_tree_1
-|4,39,1,0,1588945687,"~/projects/playground/python/push_game/NERD_tree_1"
--'  23  14  ~/.vimrc
-|4,39,23,14,1588945683,"~/.vimrc"
--'  23  14  ~/.vimrc
-|4,39,23,14,1588945683,"~/.vimrc"
+-'  23  0  ~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf
+|4,39,23,0,1591448693,"~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf"
+-'  71  28  ~/.vimrc
+|4,39,71,28,1591448687,"~/.vimrc"
+-'  20  0  ~/.vimrc
+|4,39,20,0,1591448630,"~/.vimrc"
 -'  1  0  ~/.vimrc
-|4,39,1,0,1588945662,"~/.vimrc"
+|4,39,1,0,1591448627,"~/.vimrc"
+-'  1  0  ~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf
+|4,39,1,0,1591448555,"~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf"
+-'  68  30  ~/.vimrc
+|4,39,68,30,1591448546,"~/.vimrc"
+-'  68  30  ~/.vimrc
+|4,39,68,30,1591448546,"~/.vimrc"
+-'  68  30  ~/.vimrc
+|4,39,68,30,1591448546,"~/.vimrc"
 -'  1  0  ~/.vimrc
-|4,39,1,0,1588945662,"~/.vimrc"
--'  207  0  ~/.vimrc
-|4,39,207,0,1588840081,"~/.vimrc"
--'  204  0  ~/.vimrc
-|4,39,204,0,1588840081,"~/.vimrc"
--'  207  0  ~/.vimrc
-|4,39,207,0,1588840081,"~/.vimrc"
--'  204  0  ~/.vimrc
-|4,39,204,0,1588840081,"~/.vimrc"
--'  193  0  ~/.vimrc
-|4,39,193,0,1588839351,"~/.vimrc"
--'  192  0  ~/.vimrc
-|4,39,192,0,1588839351,"~/.vimrc"
--'  190  0  ~/.vimrc
-|4,39,190,0,1588839351,"~/.vimrc"
--'  189  0  ~/.vimrc
-|4,39,189,0,1588839351,"~/.vimrc"
--'  193  0  ~/.vimrc
-|4,39,193,0,1588839351,"~/.vimrc"
--'  192  0  ~/.vimrc
-|4,39,192,0,1588839351,"~/.vimrc"
--'  190  0  ~/.vimrc
-|4,39,190,0,1588839351,"~/.vimrc"
--'  189  0  ~/.vimrc
-|4,39,189,0,1588839351,"~/.vimrc"
--'  191  0  ~/.vimrc
-|4,39,191,0,1588839350,"~/.vimrc"
--'  153  1  ~/.vimrc
-|4,39,153,1,1588839350,"~/.vimrc"
--'  126  0  ~/.vimrc
-|4,39,126,0,1588839350,"~/.vimrc"
--'  41  0  ~/.vimrc
-|4,39,41,0,1588839350,"~/.vimrc"
--'  40  2  ~/.vimrc
-|4,39,40,2,1588839350,"~/.vimrc"
--'  188  0  ~/.vimrc
-|4,39,188,0,1588839350,"~/.vimrc"
--'  150  1  ~/.vimrc
-|4,39,150,1,1588839350,"~/.vimrc"
--'  123  0  ~/.vimrc
-|4,39,123,0,1588839350,"~/.vimrc"
--'  38  0  ~/.vimrc
-|4,39,38,0,1588839350,"~/.vimrc"
--'  37  2  ~/.vimrc
-|4,39,37,2,1588839350,"~/.vimrc"
--'  191  0  ~/.vimrc
-|4,39,191,0,1588839350,"~/.vimrc"
--'  153  1  ~/.vimrc
-|4,39,153,1,1588839350,"~/.vimrc"
--'  126  0  ~/.vimrc
-|4,39,126,0,1588839350,"~/.vimrc"
--'  41  0  ~/.vimrc
-|4,39,41,0,1588839350,"~/.vimrc"
--'  40  2  ~/.vimrc
-|4,39,40,2,1588839350,"~/.vimrc"
--'  188  0  ~/.vimrc
-|4,39,188,0,1588839350,"~/.vimrc"
--'  150  1  ~/.vimrc
-|4,39,150,1,1588839350,"~/.vimrc"
--'  123  0  ~/.vimrc
-|4,39,123,0,1588839350,"~/.vimrc"
--'  38  0  ~/.vimrc
-|4,39,38,0,1588839350,"~/.vimrc"
--'  37  2  ~/.vimrc
-|4,39,37,2,1588839350,"~/.vimrc"
--'  38  0  ~/.vimrc
-|4,39,38,0,1588839349,"~/.vimrc"
--'  35  0  ~/.vimrc
-|4,39,35,0,1588839349,"~/.vimrc"
--'  38  0  ~/.vimrc
-|4,39,38,0,1588839349,"~/.vimrc"
--'  35  0  ~/.vimrc
-|4,39,35,0,1588839349,"~/.vimrc"
--'  9  0  ~/.vimrc
-|4,39,9,0,1588839345,"~/.vimrc"
--'  9  0  ~/.vimrc
-|4,39,9,0,1588839345,"~/.vimrc"
--'  9  0  ~/.vimrc
-|4,39,9,0,1588839345,"~/.vimrc"
--'  9  0  ~/.vimrc
-|4,39,9,0,1588839345,"~/.vimrc"
--'  8  0  ~/.vimrc
-|4,39,8,0,1588839340,"~/.vimrc"
--'  8  0  ~/.vimrc
-|4,39,8,0,1588839340,"~/.vimrc"
--'  8  0  ~/.vimrc
-|4,39,8,0,1588839340,"~/.vimrc"
--'  8  0  ~/.vimrc
-|4,39,8,0,1588839340,"~/.vimrc"
+|4,39,1,0,1591448423,"~/.vimrc"
 -'  1  0  ~/.vimrc
-|4,39,1,0,1588839335,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1588839335,"~/.vimrc"
--'  20  4  ~/.vimrc
-|4,39,20,4,1588838914,"~/.vimrc"
--'  20  4  ~/.vimrc
-|4,39,20,4,1588838914,"~/.vimrc"
--'  20  4  ~/.vimrc
-|4,39,20,4,1588838914,"~/.vimrc"
--'  20  4  ~/.vimrc
-|4,39,20,4,1588838914,"~/.vimrc"
--'  20  4  ~/.vimrc
-|4,39,20,4,1588838914,"~/.vimrc"
--'  20  4  ~/.vimrc
-|4,39,20,4,1588838914,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1588838907,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1588838907,"~/.vimrc"
--'  150  0  ~/.vimrc
-|4,39,150,0,1588838903,"~/.vimrc"
--'  147  0  ~/.vimrc
-|4,39,147,0,1588838903,"~/.vimrc"
--'  147  0  ~/.vimrc
-|4,39,147,0,1588838903,"~/.vimrc"
--'  147  0  ~/.vimrc
-|4,39,147,0,1588838903,"~/.vimrc"
--'  150  0  ~/.vimrc
-|4,39,150,0,1588838903,"~/.vimrc"
--'  147  0  ~/.vimrc
-|4,39,147,0,1588838903,"~/.vimrc"
--'  147  0  ~/.vimrc
-|4,39,147,0,1588838903,"~/.vimrc"
--'  147  0  ~/.vimrc
-|4,39,147,0,1588838903,"~/.vimrc"
--'  149  20  ~/.vimrc
-|4,39,149,20,1588838886,"~/.vimrc"
--'  146  20  ~/.vimrc
-|4,39,146,20,1588838886,"~/.vimrc"
--'  146  20  ~/.vimrc
-|4,39,146,20,1588838886,"~/.vimrc"
--'  146  20  ~/.vimrc
-|4,39,146,20,1588838886,"~/.vimrc"
--'  149  20  ~/.vimrc
-|4,39,149,20,1588838886,"~/.vimrc"
--'  146  20  ~/.vimrc
-|4,39,146,20,1588838886,"~/.vimrc"
--'  146  20  ~/.vimrc
-|4,39,146,20,1588838886,"~/.vimrc"
--'  146  20  ~/.vimrc
-|4,39,146,20,1588838886,"~/.vimrc"
+|4,39,1,0,1591448423,"~/.vimrc"
+-'  21  0  ~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf
+|4,39,21,0,1591448418,"~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf"
+-'  21  0  ~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf
+|4,39,21,0,1591448418,"~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf"
+-'  21  0  ~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf
+|4,39,21,0,1591448418,"~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf"
+-'  21  0  ~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf
+|4,39,21,0,1591448418,"~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf"
+-'  21  0  ~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf
+|4,39,21,0,1591448418,"~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf"
+-'  18  0  ~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf
+|4,39,18,0,1591448275,"~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf"
+-'  18  0  ~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf
+|4,39,18,0,1591448275,"~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf"
+-'  18  0  ~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf
+|4,39,18,0,1591448275,"~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf"
+-'  18  0  ~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf
+|4,39,18,0,1591448275,"~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf"
+-'  18  0  ~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf
+|4,39,18,0,1591448275,"~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf"
+-'  1  0  ~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf
+|4,39,1,0,1591448268,"~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf"
+-'  1  0  ~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf
+|4,39,1,0,1591448268,"~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf"
+-'  1  0  ~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf
+|4,39,1,0,1591448268,"~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf"
+-'  1  0  ~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf
+|4,39,1,0,1591448268,"~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf"
+-'  1  0  ~/projects/prometheus/cloud_setup/terraform.tf
+|4,39,1,0,1591448265,"~/projects/prometheus/cloud_setup/terraform.tf"
+-'  1  0  ~/projects/prometheus/cloud_setup/terraform.tf
+|4,39,1,0,1591448265,"~/projects/prometheus/cloud_setup/terraform.tf"
+-'  1  0  ~/projects/prometheus/cloud_setup/terraform.tf
+|4,39,1,0,1591448265,"~/projects/prometheus/cloud_setup/terraform.tf"
+-'  1  0  ~/projects/prometheus/cloud_setup/terraform.tf
+|4,39,1,0,1591448265,"~/projects/prometheus/cloud_setup/terraform.tf"
+-'  1  0  ~/projects/prometheus/cloud_setup/terraform.tf
+|4,39,1,0,1591448265,"~/projects/prometheus/cloud_setup/terraform.tf"
+-'  1  0  ~/projects/prometheus/cloud_setup/terraform.tf
+|4,39,1,0,1591448265,"~/projects/prometheus/cloud_setup/terraform.tf"
+-'  1  0  ~/projects/prometheus/cloud_setup/terraform.tf
+|4,39,1,0,1591448265,"~/projects/prometheus/cloud_setup/terraform.tf"
+-'  1  0  ~/projects/prometheus/cloud_setup/terraform.tf
+|4,39,1,0,1591448265,"~/projects/prometheus/cloud_setup/terraform.tf"
+-'  1  0  ~/projects/prometheus/cloud_setup/terraform.tf
+|4,39,1,0,1591448265,"~/projects/prometheus/cloud_setup/terraform.tf"
+-'  1  0  ~/projects/prometheus/cloud_setup/terraform.tf
+|4,39,1,0,1591448265,"~/projects/prometheus/cloud_setup/terraform.tf"
+-'  1  0  ~/projects/prometheus/cloud_setup/terraform.tf
+|4,39,1,0,1591448265,"~/projects/prometheus/cloud_setup/terraform.tf"
+-'  1  0  ~/projects/prometheus/cloud_setup/terraform.tf
+|4,39,1,0,1591448265,"~/projects/prometheus/cloud_setup/terraform.tf"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  1  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,1,0,1591447746,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
+-'  5  0  ~/projects/prometheus/cloud_setup/.gitignore
+|4,39,5,0,1591447238,"~/projects/prometheus/cloud_setup/.gitignore"
 
 # History of marks within files (newest to oldest):
+
+> ~/.vimrc
+	*	1591448686	0
+	"	71	28
+	^	71	29
+	.	71	28
+	+	66	0
+	+	44	0
+	+	58	0
+	+	18	51
+	+	26	0
+	+	18	0
+	+	26	0
+	+	18	0
+	+	20	1
+	+	18	10
+	+	227	44
+	+	227	66
+	+	227	87
+	+	227	108
+	+	227	0
+	+	18	15
+	+	18	16
+	+	78	49
+	+	27	24
+	+	120	0
+	+	85	4
+	+	85	22
+	+	115	4
+	+	115	8
+	+	120	0
+	+	119	0
+	+	118	0
+	+	115	7
+	+	117	0
+	+	87	4
+	+	115	3
+	+	115	2
+	+	98	0
+	+	87	4
+	+	115	1
+	+	97	63
+	+	100	0
+	+	100	85
+	+	103	110
+	+	106	53
+	+	110	0
+	+	109	46
+	+	112	70
+	+	114	12
+	+	66	5
+	+	66	0
+	+	18	11
+	+	66	0
+	+	18	0
+	+	20	8
+	+	18	0
+	+	20	8
+	+	18	12
+	+	12	8
+	+	18	0
+	+	15	7
+	+	20	1
+	+	28	0
+	+	32	0
+	+	28	7
+	+	129	34
+	+	131	13
+	+	60	0
+	+	62	0
+	+	63	0
+	+	65	0
+	+	61	0
+	+	58	31
+	+	87	3
+	+	87	2
+	+	87	1
+	+	89	0
+	+	87	5
+	+	203	1
+	+	203	19
+	+	205	24
+	+	207	0
+	+	206	0
+	+	34	0
+	+	34	19
+	+	35	19
+	+	35	22
+	+	212	2
+	+	212	1
+	+	212	0
+	+	21	0
+	+	20	11
+	+	155	29
+	+	38	1
+	+	39	0
+	+	38	17
+	+	155	0
+	+	23	1
+	+	24	0
+	+	23	14
+	+	74	0
+	+	68	0
+	+	72	0
+	+	68	29
+	+	71	28
+
+> ~/projects/prometheus/cloud_setup/terraform_cloud_setup.tf
+	*	1591448590	0
+	"	23	0
+	^	23	1
+	.	23	0
+	+	18	15
+	+	18	0
+	+	18	29
+	+	18	0
+	+	18	2
+	+	18	0
+	+	15	34
+	+	16	25
+	+	17	19
+	+	15	21
+	+	15	38
+	+	16	28
+	+	17	12
+	+	15	38
+	+	16	14
+	+	17	23
+	+	15	35
+	+	16	11
+	+	17	19
+	+	14	0
+	+	1	51
+	+	14	0
+	+	12	0
+	+	1	5
+	+	12	0
+	+	1	0
+	+	12	0
+	+	13	72
+	+	14	31
+	+	15	22
+	+	18	31
+	+	18	7
+	+	18	11
+	+	18	0
+	+	18	16
+	+	18	2
+	+	18	0
+	+	18	2
+	+	18	0
+	+	18	1
+	+	18	0
+	+	18	3
+	+	13	34
+	+	13	0
+	+	14	24
+	+	15	10
+	+	14	11
+	+	13	23
+	+	14	14
+	+	15	13
+	+	10	0
+	+	7	14
+	+	4	13
+	+	4	0
+	+	1	21
+	+	4	21
+	+	7	15
+	+	2	13
+	+	5	13
+	+	8	13
+	+	18	54
+	+	19	24
+	+	26	0
+	+	21	0
+	+	20	0
+	+	21	35
+	+	23	0
+
+> ~/projects/prometheus/cloud_setup/terraform.tf
+	*	1591448264	0
+	"	1	0
+
+> ~/projects/prometheus/cloud_setup/.gitignore
+	*	1591447744	0
+	"	1	0
+	^	5	0
+	.	4	24
+	+	1	11
+	+	1	15
+	+	4	24
+
+> ~/projects/prometheus/cloud_setup/terraform.tfvars
+	*	1591447163	0
+	"	3	32
+	^	3	36
+	.	3	32
+	+	1	13
+	+	2	12
+	+	3	8
+	+	1	44
+	+	2	34
+	+	3	32
+
+> ~/projects/prometheus/cloud_setup/readme.md
+	*	1591446984	0
+	"	4	45
+	^	4	46
+	.	4	46
+	+	4	46
+
+> ~/projects/prometheus/backend/clients/python_mqtt_client/google_mqtt_device_manager.py
+	*	1591444871	0
+	"	25	0
+
+> ~/projects/prometheus/backend/clients/python_mqtt_client/NERD_tree_1
+	*	1591444836	0
+	"	7	0
+	.	1	0
+	+	1	0
+
+> ~/projects/prometheus/cloud_setup/env_setup.sh
+	*	1591443767	0
+	"	1	39
+	^	7	20
+	.	1	39
+	+	1	0
+	+	3	0
+	+	1	64
+	+	3	47
+	+	1	89
+	+	3	0
+	+	2	0
+	+	4	0
+	+	6	53
+	+	5	44
+	+	7	33
+	+	8	14
+	+	1	93
+	+	5	24
+	+	6	23
+	+	7	19
+	+	8	0
+	+	1	39
+
+> ~/projects/prometheus/cloud_setup/terraform_
+	*	1591443610	0
+	"	1	0
+
+> ~/projects/prometheus/cloud_setup/tf_variables.tfvars
+	*	1591442100	0
+	"	1	64
+	^	1	65
+	.	1	64
+	+	3	19
+	+	1	64
+
+> ~/projects/prometheus/cloud_setup/terraform
+	*	1591440887	0
+	"	1	0
+
+> ~/projects/prometheus/cloud_setup/terraform_setup.tf
+	*	1591438689	0
+	"	6	40
+	^	6	41
+	.	6	40
+	+	6	37
+	+	7	0
+	+	4	20
+	+	5	11
+	+	6	10
+	+	4	53
+	+	5	13
+	+	6	40
+	+	4	53
+	+	5	37
+	+	6	40
+
+> ~/projects/prometheus/cloud_setup/NERD_tree_1
+	*	1591438542	0
+	"	9	0
+	.	1	0
+	+	1	0
+
+> ~/projects/prometheus/cloud_setup/[BufExplorer]
+	*	1591437684	0
+	"	1	0
+
+> /etc/environment
+	*	1591435847	0
+	"	1	98
+	^	1	98
+	.	1	97
+	+	1	97
+
+> ~/projects/prometheus/python_mqtt_client/sub.py
+	*	1591433474	0
+	"	24	4
+
+> ~/projects/prometheus/NERD_tree_1
+	*	1591100538	0
+	"	17	0
+	.	1	0
+	+	1	0
+
+> ~/projects/softwareprojekt/data/image_utils/batch_resizer/readme.md
+	*	1590935684	0
+	"	3	22
+	^	3	23
+	.	3	22
+	+	6	1
+	+	3	22
+
+> ~/projects/softwareprojekt/data/image_utils/batch_resizer/requirements.txt
+	*	1590935628	0
+	"	3	0
+	.	4	0
+	+	1	12
+	+	1	19
+	+	1	0
+	+	2	0
+	+	3	0
+	+	4	0
+
+> ~/projects/softwareprojekt/data/image_utils/batch_resizer/re
+	*	1590935244	0
+	"	1	0
+
+> ~/projects/softwareprojekt/data/image_utils/batch_resizer/requirements.tx
+	*	1590935194	0
+	"	1	0
+
+> ~/projects/softwareprojekt/data/image_utils/batch_resizer/readme
+	*	1590935090	0
+	"	1	0
+
+> ~/.tmux.conf
+	*	1590934743	0
+	"	25	0
+	^	96	21
+	.	22	3
+	+	70	5
+	+	75	5
+	+	60	0
+	+	33	57
+	+	77	14
+	+	78	7
+	+	70	5
+	+	32	0
+	+	71	5
+	+	69	5
+	+	71	5
+	+	74	16
+	+	34	51
+	+	35	0
+	+	12	0
+	+	97	0
+	+	96	20
+	+	22	3
+
+> ~/.tmux.conf.local
+	*	1590934562	0
+	"	296	0
+	^	300	27
+	.	293	0
+	+	278	0
+	+	281	0
+	+	289	0
+	+	290	0
+	+	291	0
+	+	292	0
+	+	293	0
+	+	295	26
+	+	296	10
+	+	295	25
+	+	300	26
+	+	281	0
+	+	289	0
+	+	290	0
+	+	289	0
+	+	291	0
+	+	292	0
+	+	293	0
+
+> ~/.tmux.conf.
+	*	1590934496	0
+	"	1	0
+
+> ~/projects/softwareprojekt/data/data_fetching/data_fetcher.sh
+	*	1590934165	0
+	"	27	3
+	.	27	0
+	+	23	52
+	+	24	3
+	+	25	3
+	+	28	5
+	+	25	3
+	+	28	0
+	+	26	6
+	+	25	0
+	+	26	0
+	+	28	0
+	+	23	27
+	+	17	46
+	+	27	0
+
+> ~/projects/softwareprojekt/data/data_fetching/fetch_hashtags.sh
+	*	1590927114	0
+	"	1	0
+	^	54	3
+	.	54	2
+	+	52	0
+	+	9	0
+	+	52	26
+	+	52	43
+	+	52	14
+	+	52	51
+	+	52	0
+	+	52	29
+	+	52	0
+	+	52	34
+	+	52	1
+	+	52	119
+	+	52	1
+	+	52	89
+	+	52	44
+	+	4	1
+	+	9	0
+	+	52	30
+	+	52	1
+	+	52	0
+	+	52	2
+	+	52	34
+	+	52	2
+	+	52	4
+	+	52	2
+	+	52	7
+	+	52	5
+	+	52	4
+	+	52	9
+	+	52	2
+	+	52	23
+	+	52	44
+	+	52	2
+	+	52	82
+	+	52	57
+	+	52	2
+	+	52	23
+	+	52	2
+	+	52	1
+	+	52	22
+	+	52	2
+	+	52	0
+	+	52	23
+	+	52	24
+	+	52	18
+	+	52	28
+	+	52	4
+	+	52	0
+	+	52	22
+	+	52	18
+	+	52	55
+	+	52	2
+	+	52	0
+	+	52	2
+	+	52	56
+	+	52	0
+	+	52	65
+	+	52	36
+	+	52	32
+	+	52	7
+	+	52	2
+	+	52	38
+	+	26	0
+	+	13	1
+	+	52	0
+	+	13	1
+	+	14	0
+	+	52	6
+	+	52	0
+	+	52	3
+	+	52	4
+	+	52	0
+	+	52	43
+	+	52	0
+	+	52	42
+	+	52	0
+	+	19	51
+	+	28	1
+	+	52	0
+	+	28	1
+	+	50	3
+	+	52	0
+	+	50	0
+	+	29	0
+	+	30	0
+	+	60	0
+	+	57	0
+	+	59	0
+	+	57	5
+	+	1	0
+	+	2	0
+	+	1	9
+	+	2	0
+	+	55	0
+	+	55	24
+	+	59	8
+	+	54	2
+
+> ~/projects/softwareprojekt/data/data_fetching/NERD_tree_1
+	*	1590921278	0
+	"	6	0
+	.	1	0
+	+	1	0
+
+> ~/projects/softwareprojekt/data/data_fetching/test/NERD_tree_1
+	*	1590921054	0
+	"	7	0
+	.	1	0
+	+	1	0
+
+> ~/projects/softwareprojekt/data/data_fetching/readme
+	*	1590917647	0
+	"	3	89
+	^	3	90
+	.	3	89
+	+	1	54
+	+	1	0
+	+	4	42
+	+	4	0
+	+	3	89
+
+> ~/projects/softwareprojekt/data/data_fetching/.fe
+	*	1590859436	0
+	"	1	0
+
+> ~/projects/softwareprojekt/data/data_fetching/ge
+	*	1590858919	0
+	"	1	0
+
+> ~/NERD_tree_1
+	*	1589384721	0
+	"	40	2
+	.	1	0
+	+	1	0
 
 > ~/projects/prometheus/frontend-test/index.html
 	*	1589040476	0
@@ -577,112 +1189,6 @@ $FINISHED_GAME
 	"	10	2
 	.	1	0
 	+	1	0
-
-> ~/.vimrc
-	*	1588945681	0
-	"	23	14
-	^	23	15
-	.	23	14
-	+	61	27
-	+	66	0
-	+	64	34
-	+	62	34
-	+	66	33
-	+	66	0
-	+	44	0
-	+	58	0
-	+	18	51
-	+	26	0
-	+	18	0
-	+	26	0
-	+	18	0
-	+	20	1
-	+	18	10
-	+	222	44
-	+	222	66
-	+	222	87
-	+	222	108
-	+	222	0
-	+	18	15
-	+	18	16
-	+	73	49
-	+	27	24
-	+	115	0
-	+	80	4
-	+	80	22
-	+	110	4
-	+	110	8
-	+	115	0
-	+	114	0
-	+	113	0
-	+	110	7
-	+	112	0
-	+	82	4
-	+	110	3
-	+	110	2
-	+	93	0
-	+	82	4
-	+	110	1
-	+	92	63
-	+	95	0
-	+	95	85
-	+	98	110
-	+	101	53
-	+	105	0
-	+	104	46
-	+	107	70
-	+	109	12
-	+	66	5
-	+	66	0
-	+	18	11
-	+	66	0
-	+	18	0
-	+	20	8
-	+	18	0
-	+	20	8
-	+	18	12
-	+	12	8
-	+	18	0
-	+	15	7
-	+	20	1
-	+	28	0
-	+	32	0
-	+	28	7
-	+	124	34
-	+	126	13
-	+	60	0
-	+	62	0
-	+	63	0
-	+	65	0
-	+	61	0
-	+	58	31
-	+	82	3
-	+	82	2
-	+	82	1
-	+	84	0
-	+	82	5
-	+	198	1
-	+	198	19
-	+	200	24
-	+	202	0
-	+	201	0
-	+	34	0
-	+	34	19
-	+	35	19
-	+	35	22
-	+	207	2
-	+	207	1
-	+	207	0
-	+	21	0
-	+	20	11
-	+	150	29
-	+	38	1
-	+	39	0
-	+	38	17
-	+	150	0
-	+	23	1
-	+	24	0
-	+	23	14
 
 > ~/projects/playground/python/push_game/Makefile
 	*	1588945522	0
@@ -789,12 +1295,6 @@ $FINISHED_GAME
 > ~/projects/trade_master/backend/data/historic_data_api/data_transformation/.fxt_creator.py.swp
 	*	1588767092	0
 	"	1	0
-
-> ~/NERD_tree_1
-	*	1588767016	0
-	"	4	0
-	.	1	0
-	+	1	0
 
 > ~/file
 	*	1588766999	0
@@ -934,26 +1434,6 @@ $FINISHED_GAME
 	*	1588696018	0
 	"	2	0
 
-> ~/.tmux.conf
-	*	1588695877	0
-	"	12	0
-	.	12	0
-	+	70	5
-	+	75	5
-	+	60	0
-	+	33	57
-	+	77	14
-	+	78	7
-	+	70	5
-	+	32	0
-	+	71	5
-	+	69	5
-	+	71	5
-	+	74	16
-	+	34	51
-	+	35	0
-	+	12	0
-
 > ~/.inputrc
 	*	1588695602	0
 	"	1	18
@@ -974,30 +1454,6 @@ $FINISHED_GAME
 	"	58	0
 	.	58	0
 	+	58	0
-
-> ~/.tmux.conf.local
-	*	1588686962	0
-	"	62	0
-	^	300	27
-	.	293	0
-	+	278	0
-	+	281	0
-	+	289	0
-	+	290	0
-	+	291	0
-	+	292	0
-	+	293	0
-	+	295	26
-	+	296	10
-	+	295	25
-	+	300	26
-	+	281	0
-	+	289	0
-	+	290	0
-	+	289	0
-	+	291	0
-	+	292	0
-	+	293	0
 
 > ~/vimrc
 	*	1588676100	0
