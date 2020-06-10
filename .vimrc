@@ -40,8 +40,8 @@ map <esc> :noh<CR>
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" vim debugger plugin
+Plugin 'vim-vdebug/vdebug'
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
@@ -117,6 +117,22 @@ let g:rainbow_conf = {
 
 " better commenting
 Plugin 'preservim/nerdcommenter'
+" let the leader key to space Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+" " Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+"" Set a language to use its alternate delimiters by default
+let g:NERDAltDelims_java = 1
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/'  }  }
+"" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+"" Enable NERDCommenterToggle to check all selected lines is commented or not 
+let g:NERDToggleCheckAllLines = 1"
 
 " python color_scheme plugin
 Plugin 'jnurmine/Zenburn'
