@@ -22,11 +22,10 @@ set hlsearch
 " paste multiple times
 xnoremap p pgvy
 
-" close tab with ctr + w
-map" set the leader key to space
+" set the leader key to space
 let mapleader = "\<Space>"
 
-" map close tab to ctrl + 2
+" map close tab to ctrl + w
 nmap <leader>w :q<CR>
 nmap <leader>W :q!<CR>
 
