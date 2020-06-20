@@ -11,8 +11,7 @@ esac
 # set terminal color scheme
 #export TERM=xterm-256color
 
-# don't put duplicate lines or lines starting with space in the history.
-# See bash(1) for more options
+# don't put duplicate lines or lines starting with space in the history.  # See bash(1) for more options
 HISTCONTROL=ignoreboth
 
 # append to the history file, don't overwrite it
@@ -138,3 +137,10 @@ if [ -f '/home/alex/Downloads/google-cloud-sdk/path.bash.inc' ]; then . '/home/a
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/alex/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/home/alex/Downloads/google-cloud-sdk/completion.bash.inc'; fi
+
+
+# custom commands
+
+function connect_vm-01 {
+	ssh alex@167.86.117.202
+}

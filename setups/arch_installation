@@ -1,0 +1,62 @@
+instructions for arch linux installation
+connect to the internet:
+- use: wpa_supplicant -B -i interface -c <(wpa_passphrase MYSSID passphrase) to connect to wifi 
+
+use: timedatectl set-ntp true to update system clock
+
+partitioning:
+- cfdisk /dev/diskname
+- create efi partiion
+- create swap partiion
+- create main partition
+- make main partition bootable
+
+format the partitions:
+- mkfs.ext4 /dev/main_partition for main partition
+- mkswap /dev/swap_partition for swap partition
+- swapon /dev/swap_partition
+- mkfs.fat -F32 /dev/efi_partition for efi partition
+- mount /dev/main_partition /mnt
+
+select correct mirrors in /etc/pacman.d/mirrorlist
+
+install essential packages: pacstrap /mnt base linux linux-firmware
+
+generate fstab: genfstab -U /mnt >> /mnt/etc/fstab
+
+root into filesystem: arch-chroot /mnt
+
+set timezone: ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
+run: hwclock --systohc
+
+localization:
+- run: locale-gen
+- add LANG=en_US.UTF-8 to /etc/locale.conf
+
+add hostname to /etc/hostname
+add the following lines to /etc/hosts
+127.0.0.1	localhost
+::1		localhost
+127.0.1.1	myhostname.localdomain	myhostname
+
+install mkinitcpio
+run mkinitcpio -P to create initramfs
+
+set root password with passwd
+
+add user with: useradd -m username
+create password with passwd username
+ass user to groups: usermod -aG wheel,audio,video,optical,storage username
+
+install sudo
+visudo -> uncomment line %wheel ...
+
+
+install dhcpcd
+run systemctl enable dhcpcd
+
+
+
+install bootloader:
+- install efibootmgr: pacman -S efibootmgr
+

@@ -80,8 +80,7 @@ tmux_conf_theme_message_command_fg='#ffff00'            # yellow
 tmux_conf_theme_message_command_bg='#000000'            # black
 tmux_conf_theme_message_command_attr='bold'
 
-# window modes style
-tmux_conf_theme_mode_fg='#000000'                       # black
+# window modes style tmux_conf_theme_mode_fg='#000000'                       # black
 tmux_conf_theme_mode_bg='#ffff00'                       # yellow
 tmux_conf_theme_mode_attr='bold'
 
@@ -294,3 +293,10 @@ bind C-a send-prefix
 
 # move status line to top
 #set -g status-position top
+
+# ------------------
+# custom commands
+
+proc connect-vm01 {
+	ssh alex@167.86.117.202
+}
